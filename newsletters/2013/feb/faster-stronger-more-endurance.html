@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="X0QbqVZe04wEEu4xfVFwJwWomrGRpMyn-o5Jv4oFjg0">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,200italic,300,200,400italic,600,600italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../bootstrapfiles/bootstrap.css" rel="stylesheet" type="text/css">
+	    <link href="../../../bootstrapfiles/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 0px;
+      margin-top: 0;
+      font-size: 0px;
+      text-shadow: 0 0px 0px rgba(0,0,0,0);
+      background-color: transparent;
+      border: 0;
+      z-index: 00;
+    }
+
+    .carousel .item {
+      height: 480px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 460px;
+      padding: 0 45px;
+      margin-top: 60px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 36px;
+
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 18px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 20px;
+    }
+
+    .rwd-break { display: none; }
+
+    .features-break { display: none; }
+
+    /* BRIAN ADDITION */
+    /*
+    #myCarousel {
+    width: 85%;
+    margin: 100px 0px 0px 0px;
+    padding-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;}
+    */
+
+    /* 2ND OPTION ONLY TO MAKE ROOM FOR NAV BAR added padding to center smaller image */
+    #myCarousel {
+    margin: 100px 0px 40px 0px;
+    /* padding: 0px 100px */
+    width: 1024px;
+    margin-left:auto;
+    margin-right:auto;
+    position:inherit;
+    }
+
+    #slider-fixed-banner{
+    margin: 0px 0px 0px 0px;
+    }
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: left;
+    }
+    .marketing h2 {
+      font-weight: normal;
+      padding-left: 9px;
+    }
+    .marketing h2 .number {
+    color:#7d0d0d;
+    display:inline;
+    }
+
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+      display:inline;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .features-number {
+        font-weight: 600;
+        font-size: 31.5px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+        float:left;
+        padding-right: 10px;
+        padding-bottom: 14px;
+        padding-top: 7px;
+
+    }
+    .features-text{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 0px;
+        padding-top: 10px;
+
+    }
+
+    .features-text-red {
+        color:#ED3945;
+    }
+
+    .newsletter-text-red {
+        color:#ED3945;
+        font-size: 16px;
+        font-family:  "OpenSans", sans-serif;
+        text-transform: uppercase;
+    }
+
+    /* NEWSLETTER SIGN UP
+    -------------------------------------------------- */
+/*
+    .gfc-result .gf-title {
+    color: #ED3945;
+    text-decoration: underline;
+    }
+
+    .gfc-result .gf-title:hover {
+    color: #ED3945;
+    text-decoration: none;
+    }
+*/
+
+
+
+
+/*     COLOR OF BLOG LINK */
+    .gf-title{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+        .gf-title a{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+/*
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+
+      .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 24px;
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 12px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 1px;
+    }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel img {
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 20px;
+        margin-top: 60px;
+      }
+      .carousel-caption h1 {
+        font-size: 20px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 12px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+*/
+    </style><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../../apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../../apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <style type="text/css" id="holderjs-style">
+.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+    </style>
+
+
+
+
+
+<style>
+
+
+  body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+              .skybar{
+        position:relative;
+	    top:-27px;
+	    left:70px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+              .skybar a{
+        position:relative;
+	    left:30px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+    .navbar .navbar-inner {
+      border: 0;
+      background: #eeeeee; /* Old browsers */
+      background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    }
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 102%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 14%;
+/*         font-size: 13px; */
+        line-height: 30px;
+      }
+
+      .navbar .nav ul li {
+        display: table-row;
+/*
+        width: 1%;
+        float: none;
+        font-size: 13px;
+*/
+      }
+
+      .navbar .nav .dropdown-menu li a {
+        text-align: left;
+      }
+
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+
+
+      .navbar{
+	  margin-top: 25px;
+/* 	  BRIAN THIS IS MOVING THE NAV SUB MENU OVER THE IMAGE */
+	  position: relative;
+      z-index: 10;
+      }
+
+
+      /* MAKE DROPDOWN WORK ON HOVER */
+    ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+}
+
+      .headertext{
+	      margin-top: -18px;
+	      font-size: 10px;
+      }
+
+          .header-number {
+        font-weight: normal;
+        font-size: 24px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+    }
+
+    .navbar-search .search-query {
+	    margin-bottom: 15px;
+    }
+
+
+</style><title></title></head>
+<body>
+
+    <div class="container">
+        <div class=" row-fluid heading">
+            <div class="span3"><a href="../../../index.html"><img src="../../../bootstrapfiles/drsearszone.png" style="padding-top:22px;"></a></div>
+
+
+            <div class="span5 offset1 headertext">
+                <img src="../../../bootstrapfiles/spacer.gif" style="width:55px; height:70px;">
+
+                <a id="headerLoginAnchor" href="../../../login.html">LOG IN</a>
+
+                <img src="../../../bootstrapfiles/spacer.gif" style="width:70px; height:1px;">
+
+                <img src="../../../bootstrapfiles/cart.png">&nbsp;&nbsp;&nbsp;<a id="headerCartAnchor" href="http://zonediet.com/store/cart">MY CART</a>
+
+                <img src="../../../bootstrapfiles/spacer.gif" style="width:30px; height:1px;">
+
+                <a id="headerIntlAnchor" href="../../../shipping-intl.html">INTERNATIONAL</a>
+
+                <hr style="height:1px; margin:-17px; visibility:hidden;">
+                <img src="../../../bootstrapfiles/spacer.gif" style="width:55px; height:1px;">
+               <a id="headerRegisterAnchor" href="../../../register.html" style="font-size:10px;">Not Registered?
+
+
+            </a></div>
+
+            <div class="span3">
+		<form id="headerSearch" class="form-horizontal" method="get" action="/search_results">
+			<div class="input-append">
+			<input type="search" class="search-query" name="q" autocomplete="off" placeholder="Search" tabindex="1">
+			<span style="cursor:pointer;" onclick="document.getElementById('headerSearch').submit();" class="add-on"><i class="icon-search icon-large"></i> 
+			</span></div>
+		</form>
+					<br>
+					<img src="../../../bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span style="font-size:14px;">ORDERS &amp; QUESTIONS</span>
+					<br>
+                    <img src="../../../bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span class="header-number">800-404-8171</span>
+                
+            </div>
+        </div>
+        <div class="skybar span5 offset2"></div>
+    </div><!-- NAVBAR
+    ================================================== -->
+
+    <div class="navbar-wrapper">
+
+
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+<!--                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button> <a class="brand" href="#"><img style="height:25px; width:30px;" src="img/house.png"></a> <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+
+    <div class="nav-collapse">
+        <ul class="nav" id="mainMenuUl">
+            <li><a class="brand" href="../../../index.html"><img style="height:25px; width:30px;" src="../../../bootstrapfiles/home.png"></a></li>
+            <!-- <li ><a href="/zone_foods">Zone Foods</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="http://zonediet.com/store/zone-foods" style="cursor:pointer;">Zone Foods</a>
+            </li>
+            <!--<li ><a href="/2">Omega-3</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="../../../omega-3-fish-oils.html" style="cursor:pointer;">Omega-3</a>
+
+<!--
+                <ul class="dropdown-menu">
+                    <li><a href="/secrets">5 Dirty Secrets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+-->
+            </li>
+
+            <li><a href="../../../polyphenols.html">Polyphenols</a></li>
+
+            <li class="dropdown disabled">
+                <a href="../../../shop.html" style="cursor:pointer;">Store</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="http://zonediet.com/store/zone-foods">Zone Foods</a></li>
+
+                    <li><a href="http://zonediet.com/store/omega">Omega-3</a></li>
+
+                    <li><a href="http://zonediet.com/store/polyphenols">Polyphenols</a></li>
+
+                    <li><a href="http://zonediet.com/store/supplements">Supplements</a></li>
+
+                    <li><a href="http://zonediet.com/store/zone-bars">Zone Bars</a></li>
+
+                    <li><a href="http://zonediet.com/store/skincare">Skincare</a></li>
+
+                    <li><a href="http://zonediet.com/store/books">Books&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </li>
+            <!--<li ><a href="/about_us">About Us</a></li> -->
+            
+            <li class="dropdown disabled">
+                <a href="../../../about-us.html" style="cursor:pointer;">About Us</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../../../about-us.html">About Dr. Sears</a></li>
+                    <li><a href="../../../board.html">Scientific Advisory Board</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown disabled">
+                <a href="../../../zone-tools.html" style="cursor:pointer;">Zone Tools</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../../../zone-diet-overview.html">Zone Diet Overview</a></li>
+                    <li><a href="../../../body-fat-calc.html">Body Fat Calculator</a></li>
+                    <li><a href="../../../dining-out-tips.html">Dining Out Tips</a></li>
+                    <li><a href="../../../recipes.html">Zone Recipes</a></li>
+                    <li><a href="../../../Restaurant-Reviews.html">Restaurant Reviews</a></li>
+                    <li><a href="../../../blog/index.html">Dr. Sears&rsquo; Blog</a></li>
+                    <li><a href="../../../zone-newsletter.html">Zone Newsletters</a></li>
+                    <li><a href="../../../lifestyle-video-tips.html">Lifestyle Video Tips</a></li>
+                    <li><a href="../../../food-journal.html">Zone Food Journal</a></li>                    
+                    <li><a href="../../../food-blocks.html">Zone Food Blocks</a></li>
+                </ul>
+            </li>
+        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+<ul class="breadcrumb"><li><a href="../../../zone_newsletter.html">Zone Newsletters</a></li><li class="divider"><span class="divider">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span></li><li class="active">Faster Stronger More Endurance</li></ul><div id="templateContent" class="container">
+
+        <h1>
+Faster, stronger, more endurance 
+</h1>
+<p><em>
+By Lisa Ziegel
+</em></p>
+
+<p>
+<img alt="" style="float: center; margin: 0px 15px 15px 0px;" src="5.jpg" align="left">
+</p>
+
+<h2>
+Setting performance goals (even if you're not an athlete)
+</h2>
+
+
+<p>If you have been exercising for some time, good for you!  You are probably enjoying the results of your hard work because you are feeling more energized, enjoying better sleep, and maybe you've also toned up, gained strength and lost inches and weight!  You probably did not set out to be a record-setting athlete, lift huge amounts of weight, or run a marathon, so enhancing your "performance" was not a priority at the time.  But however reluctant you are to accept it, you really are an athlete just for doing what you do every day.  Whether it's caring for, playing and keeping up with young children, doing housework or yard work, moving furniture, or running to catch a bus, these are activities that require more than a passing level of fitness: They require you to be in your best "performance" condition.  Much of what you already do is adequate for these purposes, but what if you want to feel even better, lose more weight, improve your strength and endurance, and continue to be strong and fit to continue your daily "performances" as you age?   The answer may be in training a little harder (but not necessarily longer), lifting a bit heavier, increasing your walking pace to a run or jog, and investing in some injury-preventing movement screening and corrective exercise.
+
+</p><p>A study conducted in Wisconsin suggests that moderate-effort exercises burn fewer calories by as much as 170 per hour than vigorous-effort exercises. According to the American College of Sports Medicine (ACSM), you are exercising vigorously if your heart rate is 70 to 90 of your maximum heart rate and at a moderate intensity if it is at 55 to 69 percent.   Obviously, burning 170 more calories can have a positive effect on weight loss, if that is the goal.  The drawback is that the perceived level of exertion of the exerciser comes into play, and not everyone finds reaching outside his or her comfort zone all that pleasant.   This may be influenced somewhat by genetics and also by fear of the unknown.  Those who possess these qualities may lack confidence that they can take their workouts into another level --  they are afraid to fail.   However, change is essential to maintaining a healthy, progressive fitness program. After all, if someone has worked hard to achieve a base level of fitness, maximizing this and embracing his or her potential can only be more rewarding!  Here are some steps you can take to start reaching a higher level of fitness and how to overcome common fears and apprehensions:
+
+</p><ul>
+<li><strong>Get "Movement-screened"</strong><br>
+
+One of the major fears and a valid one – is that by exercising at a higher intensity, the risk for injury increases.  This has been seen in statistics, and particular caution must be used when recommending new levels of exercise to older adults.  One way to ease this transition is to be assessed prior to engaging in activity and screened for imbalances that could lead to injury if left unchecked.  Examples of typical areas of concern include leg-length discrepancies, which can either be structural and thus hard to treat or can occur as a result of tightness in muscles surrounding the hip/pelvic girdle, in which case can be corrected.  Or the pectoral muscles could be tight, which could lead to rotator cuff injuries unless the proper stretching/strengthening protocol is administered, (which is known as "corrective exercise").  This could be a complicated process. There are standard screening methods that can be used so, of course, working with a professional trained to help with this would be a good idea. "Functional Movement Systems" is a network of professionals who perform these assessments and offer a directory of experts who are located throughout the world.  There are also books and DVDs available to help you determine your own issues and give instructions on helping you overcome them.  You could also try discussing this with your physician, podiatrist, or orthopedic specialist.
+<br>
+</li><li><strong>Start slowly and build up!</strong><br>
+
+Of course it is assumed that you have already been maintaining at least a moderate level of activity (50-70% of heart rate maximum) for 150 minutes throughout a week's time for at least 6-8 weeks.  To add intensity, increase your heart rate but keep the duration the same or less.  This is more desirable than adding more time and frequency to the workout.  Incorporating shorter bouts of higher-intensity exercise mixed in with moderate can help ease discomfort.  Start with 3-5 minutes of high intensity alternating with the same amount of time under moderate level in bouts of 3-5 per workout.  
+<br>
+For resistance training, the benefits of increasing weight loads are many, beginning with increased muscle mass, lower body fat, stronger bone density, increased energy and performance of daily activities.  Definitions of repetitions and weight loads that are useful for building strength as determined by the ACSM are 8–12 repetitions per set 1-3 sets per exercise; however, lower repetitions with a heavier weight (6–8) can further improve strength. Due to risk of injury in older and/or frail participants, higher repetitions to volitional fatigue would be recommended (10-15 RM).  RM, or repetition max, refers to the maximal number of times a load can be lifted before fatiguing using good form and technique.  While any weight overload will result in strength development, heavier resistance lifted to maximal or near maximal limits will significantly build strength and muscle and will result in the exerciser enjoying the ability to lift heavy objects in daily life (children, boxes when moving, furniture, etc.) without having to exert as much effort.  One benefit that I hear about often (and is especially important as airlines' checked-baggage fees have gone up, resulting in carry-ons being packed fuller, thus increasing their weight) is that it is easier to handle luggage in the upper storage compartment in airplanes.  Now this comes in really handy!
+
+</li></ul>
+
+<p>Consider stepping out of your comfort zone a little at a time.  Use professional help and proven guidelines to make sure you stay safe and keep progressing or changing your program when it becomes too easy or fails to stimulate you (physically or mentally).  When you lose the fear of trying something new, the potential for physical change is endless.  You might be surprised to find you are stronger than you think.  When you improve your physical performance, you are better prepared for the "athletic event" that is life!
+
+
+
+
+
+
+ 
+
+
+
+
+      </p>
+
+</div>
+
+
+
+<div class="container">
+
+    <style type="text/css">
+
+    /* FOOTER
+    -------------------------------------------------- */
+    .footer-text{
+        font-size: 12px;
+        }
+
+    .footer-image {
+	    margin-left:auto;
+	    margin-right:auto;
+	     width:85%;
+    }
+
+    .footer-text ul{
+        list-style-type: none;
+    }
+    .footer{
+        background-color:#E4E4E4;
+        padding: 15px 30px 10px 10px;
+      }
+
+
+    </style>
+
+    
+
+
+
+    <div class="container">
+        <hr>
+
+        <footer class="footer">
+            <div class="row-fluid footer-text">
+                <div class="span1">&nbsp;</div>
+                <div class="span2">
+                    <ul>
+                        <li><strong>MEDIA</strong></li>
+
+                        <li><a href="../../../press-room.html">Press Room</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="../../../customer-service.html">NEED HELP?</a></strong></li>
+
+                        <li><a href="../../../customer-service.html">Customer Service</a></li>
+
+                        <li><a href="../../../shipping-information.html">Shipping Information</a></li>
+
+                        <li><a href="../../../privacy-policy.html">Privacy Policy</a></li>
+
+                        <li><a href="../../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                        
+                        <li><a href="../../../return-policy.html">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="../../../shipping-intl.html">INTERNATIONAL CUSTOMERS</a></strong></li>
+
+                        <li><strong>978-539-0100</strong></li>
+
+                        <li><a href="mailto:internationalorders@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong>CONTACT US</strong></li>
+
+                        <li><strong>800-404-8171</strong></li>
+
+                        <li><a href="mailto:customerservice@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+                
+                <div class="span2">
+					<a href="http://www.youtube.com/zoneadmin/"><img src="../../../images/youtube.png"></a><img src="../../../bootstrapfiles/spacer.gif" style="width:5px;height:1px;">
+                    <a href="http://www.facebook.com/TheZoneDiet"><img src="../../../images/facebook.png"></a><img src="../../../bootstrapfiles/spacer.gif" style="width:5px;height:5px;">
+                    <a href="https://twitter.com/thezonediet/"><img src="../../../images/twitter.png"></a>
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+        </footer><br>
+
+<!--
+        <div class="container">
+            <div class="footer-image"><img src="/bootstrapfiles/footer_images/zone_logos.png"> <img src="/bootstrapfiles/footer_images/diagnoztics_logos.png"> <img src="/bootstrapfiles/footer_images/zonehealth_logo.png"> <img src="/bootstrapfiles/spacer.gif"> <img src="/bootstrapfiles/footer_images/youtube.png"> <img src="/bootstrapfiles/footer_images/twitter.png"> <img src="/bootstrapfiles/footer_images/facebook.png"></div>
+        </div>
+-->
+
+<!--
+        <div class="row-fluid">
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:242px; height: 25px;"></div>
+        </div>
+-->
+
+       <p class="pull-right"><a href="faster-stronger-more-endurance.html#">Back to top</a></p>
+
+       <script type="text/javascript">
+           var currentTime = new Date()
+           //var month = currentTime.getMonth() + 1
+           //var day = currentTime.getDate()
+           var year = currentTime.getFullYear()
+           document.write("&copy" + year + " Zone Labs Inc., All Rights Reserved")
+        </script>
+
+    </div>
+
+            <!-- Le javascript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="../../../bootstrapfiles/jquery.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-transition.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-alert.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-modal.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-dropdown.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-scrollspy.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-tab.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-tooltip.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-popover.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-button.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-collapse.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-carousel.js" type="text/javascript">
+</script> <script src="../../../bootstrapfiles/bootstrap-typeahead.js" type="text/javascript">
+</script>
+ <script src="../../../bootstrapfiles/prettify.js"></script>
+<script src="../../../bootstrapfiles/bootstrap-datepicker.js" type="text/javascript">
+</script>
+<script src="../../../js/jquery.cookie.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../../../js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="../../../js/fancybox/source/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="../../../js/fancybox/source/jquery.fancybox.pack-v=2.1.5.js"></script>
+<link rel="stylesheet" href="../../../js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="../../../js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.js"></script>
+<script type="text/javascript" src="../../../js/fancybox/source/helpers/jquery.fancybox-media-v=1.0.6.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+		$('.datepicker').datepicker();
+		if($.cookie('mackerelu'))
+		{
+			$.cookie('slogin', '1', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+		}
+		else if($.cookie('slogin'))
+		{
+			if($.cookie('slogin') == '1')
+			{
+				$.cookie('slogin', '0', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+			}
+		}
+	});
+</script>
+<!-- BEGIN: Google Trusted Stores -->
+<script type="text/javascript">
+    var gts = gts || [];
+
+    gts.push(["id", "404041"]);
+    gts.push(["locale", "en_US"]);
+    //gts.push(["google_base_offer_id", "ITEM_GOOGLE_SHOPPING_ID"]);
+    //gts.push(["google_base_subaccount_id", "ITEM_GOOGLE_SHOPPING_ACCOUNT_ID"]);
+    //gts.push(["google_base_country", "ITEM_GOOGLE_SHOPPING_COUNTRY"]);
+    //gts.push(["google_base_language", "ITEM_GOOGLE_SHOPPING_LANGUAGE"]);
+
+    (function () {
+        var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+        var gts = document.createElement("script");
+        gts.type = "text/javascript";
+        gts.async = true;
+        gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(gts, s);
+    })();
+</script>
+<!-- END: Google Trusted Stores -->
+</div></div></div><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1361871-3']);
+  _gaq.push(['_setDomainName', 'zonediet.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"Kp9Uh1aon800iJ", domain:"zonediet.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Kp9Uh1aon800iJ" style="display:none" height="1" width="1" alt=""></noscript>
+<!-- End Alexa Certify Javascript -->
+</body>
+
+</html>

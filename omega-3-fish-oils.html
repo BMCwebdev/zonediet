@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="X0QbqVZe04wEEu4xfVFwJwWomrGRpMyn-o5Jv4oFjg0">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,200italic,300,200,400italic,600,600italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrapfiles/bootstrap.css" rel="stylesheet" type="text/css">
+	    <link href="bootstrapfiles/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 0px;
+      margin-top: 0;
+      font-size: 0px;
+      text-shadow: 0 0px 0px rgba(0,0,0,0);
+      background-color: transparent;
+      border: 0;
+      z-index: 00;
+    }
+
+    .carousel .item {
+      height: 480px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 460px;
+      padding: 0 45px;
+      margin-top: 60px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 36px;
+
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 18px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 20px;
+    }
+
+    .rwd-break { display: none; }
+
+    .features-break { display: none; }
+
+    /* BRIAN ADDITION */
+    /*
+    #myCarousel {
+    width: 85%;
+    margin: 100px 0px 0px 0px;
+    padding-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;}
+    */
+
+    /* 2ND OPTION ONLY TO MAKE ROOM FOR NAV BAR added padding to center smaller image */
+    #myCarousel {
+    margin: 100px 0px 40px 0px;
+    /* padding: 0px 100px */
+    width: 1024px;
+    margin-left:auto;
+    margin-right:auto;
+    position:inherit;
+    }
+
+    #slider-fixed-banner{
+    margin: 0px 0px 0px 0px;
+    }
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: left;
+    }
+    .marketing h2 {
+      font-weight: normal;
+      padding-left: 9px;
+    }
+    .marketing h2 .number {
+    color:#7d0d0d;
+    display:inline;
+    }
+
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+      display:inline;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .features-number {
+        font-weight: 600;
+        font-size: 31.5px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+        float:left;
+        padding-right: 10px;
+        padding-bottom: 14px;
+        padding-top: 7px;
+
+    }
+    .features-text{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 0px;
+        padding-top: 10px;
+
+    }
+
+    .features-text-red {
+        color:#ED3945;
+    }
+
+    .newsletter-text-red {
+        color:#ED3945;
+        font-size: 16px;
+        font-family:  "OpenSans", sans-serif;
+        text-transform: uppercase;
+    }
+
+    /* NEWSLETTER SIGN UP
+    -------------------------------------------------- */
+/*
+    .gfc-result .gf-title {
+    color: #ED3945;
+    text-decoration: underline;
+    }
+
+    .gfc-result .gf-title:hover {
+    color: #ED3945;
+    text-decoration: none;
+    }
+*/
+
+
+
+
+/*     COLOR OF BLOG LINK */
+    .gf-title{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+        .gf-title a{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+/*
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+
+      .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 24px;
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 12px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 1px;
+    }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel img {
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 20px;
+        margin-top: 60px;
+      }
+      .carousel-caption h1 {
+        font-size: 20px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 12px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+*/
+    </style><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style type="text/css" id="holderjs-style">
+.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+    </style>
+
+
+
+
+
+<style>
+
+
+  body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+              .skybar{
+        position:relative;
+	    top:-27px;
+	    left:70px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+              .skybar a{
+        position:relative;
+	    left:30px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+    .navbar .navbar-inner {
+      border: 0;
+      background: #eeeeee; /* Old browsers */
+      background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    }
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 102%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 14%;
+/*         font-size: 13px; */
+        line-height: 30px;
+      }
+
+      .navbar .nav ul li {
+        display: table-row;
+/*
+        width: 1%;
+        float: none;
+        font-size: 13px;
+*/
+      }
+
+      .navbar .nav .dropdown-menu li a {
+        text-align: left;
+      }
+
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+
+
+      .navbar{
+	  margin-top: 25px;
+/* 	  BRIAN THIS IS MOVING THE NAV SUB MENU OVER THE IMAGE */
+	  position: relative;
+      z-index: 10;
+      }
+
+
+      /* MAKE DROPDOWN WORK ON HOVER */
+    ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+}
+
+      .headertext{
+	      margin-top: -18px;
+	      font-size: 10px;
+      }
+
+          .header-number {
+        font-weight: normal;
+        font-size: 24px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+    }
+
+    .navbar-search .search-query {
+	    margin-bottom: 15px;
+    }
+
+
+</style>
+<meta charset="utf-8">
+
+<meta name="keywords" content="omega-3 fish oil">
+<meta name="description" content="What else are you getting in your omega-3 fish oil? Dr. Sears Omega-3 Fish Oil Supplements are the highest purity omega-3 fish oil products available with or without a prescription! Independent third-party testing shows it is potent, fresh and pure.">
+
+
+<title></title></head>
+<body>
+
+    <div class="container">
+        <div class=" row-fluid heading">
+            <div class="span3"><a href="index.html"><img src="bootstrapfiles/drsearszone.png" style="padding-top:22px;"></a></div>
+
+
+            <div class="span5 offset1 headertext">
+                <img src="bootstrapfiles/spacer.gif" style="width:55px; height:70px;">
+
+                <a id="headerLoginAnchor" href="login.html">LOG IN</a>
+
+                <img src="bootstrapfiles/spacer.gif" style="width:70px; height:1px;">
+
+                <img src="bootstrapfiles/cart.png">&nbsp;&nbsp;&nbsp;<a id="headerCartAnchor" href="http://zonediet.com/store/cart">MY CART</a>
+
+                <img src="bootstrapfiles/spacer.gif" style="width:30px; height:1px;">
+
+                <a id="headerIntlAnchor" href="shipping-intl.html">INTERNATIONAL</a>
+
+                <hr style="height:1px; margin:-17px; visibility:hidden;">
+                <img src="bootstrapfiles/spacer.gif" style="width:55px; height:1px;">
+               <a id="headerRegisterAnchor" href="register.html" style="font-size:10px;">Not Registered?
+
+
+            </a></div>
+
+            <div class="span3">
+		<form id="headerSearch" class="form-horizontal" method="get" action="/search_results">
+			<div class="input-append">
+			<input type="search" class="search-query" name="q" autocomplete="off" placeholder="Search" tabindex="1">
+			<span style="cursor:pointer;" onclick="document.getElementById('headerSearch').submit();" class="add-on"><i class="icon-search icon-large"></i> 
+			</span></div>
+		</form>
+					<br>
+					<img src="bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span style="font-size:14px;">ORDERS &amp; QUESTIONS</span>
+					<br>
+                    <img src="bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span class="header-number">800-404-8171</span>
+                
+            </div>
+        </div>
+        <div class="skybar span5 offset2"></div>
+    </div><!-- NAVBAR
+    ================================================== -->
+
+    <div class="navbar-wrapper">
+
+
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+<!--                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button> <a class="brand" href="#"><img style="height:25px; width:30px;" src="img/house.png"></a> <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+
+    <div class="nav-collapse">
+        <ul class="nav" id="mainMenuUl">
+            <li><a class="brand" href="index.html"><img style="height:25px; width:30px;" src="bootstrapfiles/home.png"></a></li>
+            <!-- <li ><a href="/zone_foods">Zone Foods</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="http://zonediet.com/store/zone-foods" style="cursor:pointer;">Zone Foods</a>
+            </li>
+            <!--<li ><a href="/2">Omega-3</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="omega-3-fish-oils.html" style="cursor:pointer;">Omega-3</a>
+
+<!--
+                <ul class="dropdown-menu">
+                    <li><a href="/secrets">5 Dirty Secrets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+-->
+            </li>
+
+            <li><a href="polyphenols.html">Polyphenols</a></li>
+
+            <li class="dropdown disabled">
+                <a href="shop.html" style="cursor:pointer;">Store</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="http://zonediet.com/store/zone-foods">Zone Foods</a></li>
+
+                    <li><a href="http://zonediet.com/store/omega">Omega-3</a></li>
+
+                    <li><a href="http://zonediet.com/store/polyphenols">Polyphenols</a></li>
+
+                    <li><a href="http://zonediet.com/store/supplements">Supplements</a></li>
+
+                    <li><a href="http://zonediet.com/store/zone-bars">Zone Bars</a></li>
+
+                    <li><a href="http://zonediet.com/store/skincare">Skincare</a></li>
+
+                    <li><a href="http://zonediet.com/store/books">Books&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </li>
+            <!--<li ><a href="/about_us">About Us</a></li> -->
+            
+            <li class="dropdown disabled">
+                <a href="about-us.html" style="cursor:pointer;">About Us</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="about-us.html">About Dr. Sears</a></li>
+                    <li><a href="board.html">Scientific Advisory Board</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown disabled">
+                <a href="zone-tools.html" style="cursor:pointer;">Zone Tools</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="zone-diet-overview.html">Zone Diet Overview</a></li>
+                    <li><a href="body-fat-calc.html">Body Fat Calculator</a></li>
+                    <li><a href="dining-out-tips.html">Dining Out Tips</a></li>
+                    <li><a href="recipes.html">Zone Recipes</a></li>
+                    <li><a href="Restaurant-Reviews.html">Restaurant Reviews</a></li>
+                    <li><a href="blog/index.html">Dr. Sears&rsquo; Blog</a></li>
+                    <li><a href="zone-newsletter.html">Zone Newsletters</a></li>
+                    <li><a href="lifestyle-video-tips.html">Lifestyle Video Tips</a></li>
+                    <li><a href="food-journal.html">Zone Food Journal</a></li>                    
+                    <li><a href="food-blocks.html">Zone Food Blocks</a></li>
+                </ul>
+            </li>
+        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+<div id="templateContent" class="container"><!-- Jumbotron -->
+<div class="container">
+<div class="jumbotron dirtybanner"><a href="http://shop.zonediet.com/custom/product_results.aspx?category_guid=d9a47797-510f-4140-a337-60a2344b3651"><img src="bootstrapfiles/omega-3-fish-oil.jpg"></a> <!--
+                          <div class="jumbotron-container">
+                        <div class="jumbotron-caption">
+                            <h1>"Dr. Sears' name is on every product, which is why we test each lot to meet his strict guidelines."
+                            </h1><br>
+
+                            <p class="lead leadp">Do you want to lose weight, increase wellness, and slow the aging process?</p>
+
+                            <br>
+                            <a class="btn btn-large btn-primary" href="#">We can help Â»</a>
+                        </div>
+                    </div>
+--></div>
+</div>
+
+<div class="row-fluid">
+<div class="span3 productbox" id="prodbox_104">
+<img src="images/msitems/prodbox-top-104.jpg" alt="Dr. Sears' OmegaRx Fish Oil - 120 Capsules">
+<a href="http://zonediet.com/store/cart?itemcodes=104"><img src="images/msitems/prodbox-bottom-104.jpg" alt="Dr. Sears' OmegaRx Fish Oil - 120 Capsules"></a>
+<div class="backroundgrey"><span class="product-line-1">$50.95 for 120 Caps</span><br>
+<span class="product-line-2">Only $40.76 with AutoShip</span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="http://zonediet.com/store/item/104">More Info &rsaquo;</a>&nbsp;&nbsp;<a style="color:#0174DF;" class="fancybox" href="omega-3-fish-oils.html#supp_facts_104">Supplement Facts &rsaquo;</a></span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="omega-3-fish-oils.html#purity_data_104" class="fancybox">Purity Data &rsaquo;</a>&nbsp;&nbsp;<a style="color:#0174DF;" href="http://zonediet.com/store/omega">Available Sizes &rsaquo;</a></span></div>
+</div>
+
+<div class="span3" id="prodbox_101">
+<img src="images/msitems/prodbox-top-101.jpg" alt="Dr. Sears' OmegaRx Fish Oil - 8oz Liquid">
+<a href="http://zonediet.com/store/cart?itemcodes=101"><img src="images/msitems/prodbox-bottom-101.jpg" alt="Dr. Sears' OmegaRx Fish Oil - 8oz Liquid"></a>
+<div class="backroundgrey"><span class="product-line-1">$79.95 for 8oz Liquid</span><br>
+<span class="product-line-2">Only $63.96 with AutoShip</span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="http://zonediet.com/store/item/101">More Info &rsaquo;</a>&nbsp;&nbsp;<a style="color:#0174DF;" class="fancybox" href="omega-3-fish-oils.html#supp_facts_101">Supplement Facts &rsaquo;</a></span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="omega-3-fish-oils.html#purity_data_101" class="fancybox">Purity Data &rsaquo;</a>&nbsp;&nbsp;</span></div>
+</div>
+
+<div class="span3" id="prodbox_99">
+<img src="images/msitems/prodbox-top-99.jpg" alt="Zone EicoRx™ Fish Oil with GLA - 120 Capsules">
+<a href="http://zonediet.com/store/cart?itemcodes=99"><img src="images/msitems/prodbox-bottom-99.jpg" alt="Zone EicoRx™ Fish Oil with GLA - 120 Capsules"></a>
+<div class="backroundgrey"><span class="product-line-1">$61.95 for 120 Caps</span><br>
+<span class="product-line-2">Only $49.56 with AutoShip</span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="http://zonediet.com/store/item/99">More Info &rsaquo;</a>&nbsp;&nbsp;<a style="color:#0174DF;" class="fancybox" href="omega-3-fish-oils.html#supp_facts_99">Supplement Facts &rsaquo;</a></span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="omega-3-fish-oils.html#purity_data_99" class="fancybox">Purity Data &rsaquo;</a>&nbsp;&nbsp;</span></div>
+</div>
+
+<div class="span3" id="prodbox_1001">
+<img src="images/msitems/prodbox-top-1001.jpg" alt="Dr. Sears' Daily Essentials - OmegaRx & MaquiRx (28 Day Supply)">
+<a href="http://zonediet.com/store/cart?itemcodes=1001"><img src="images/msitems/prodbox-bottom-1001.jpg" alt="Dr. Sears' Daily Essentials - OmegaRx & MaquiRx (28 Day Supply)"></a>
+<div class="backroundgrey"><span class="product-line-1">$99.95 for 28 Packets</span><br>
+<span class="product-line-2">Only $79.95 with AutoShip</span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="http://zonediet.com/store/item/1001">More Info &rsaquo;</a>&nbsp;&nbsp;<a style="color:#0174DF;" class="fancybox" href="omega-3-fish-oils.html#supp_facts_1001">Supplement Facts &rsaquo;</a></span><br>
+<span class="product-line-3"><a style="color:#0174DF;" href="omega-3-fish-oils.html#purity_data_1001" class="fancybox">Purity Data &rsaquo;</a>&nbsp;&nbsp;</span></div>
+</div>
+&nbsp;
+
+<div style="text-align:right; left:-20px; position:relative; top:5px; padding-botom:10px;"><span class="toolstitles"><a href="http://zonediet.com/store/omega" style="color: #ED3945; font-size:18px;">View All Omega-3&reg; Products &rsaquo;</a></span></div>
+<!--
+<div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:1px; height: 45px;"></div>
+
+<div class="span8" style="margin-left:0px !important;">
+<h3>Which Product is Right for You?</h3>
+
+<p>OmegaRx&reg; capsules-the ideal choice for those who only need a maintenance dose of EPA and DHA and for when you travel if you take larger doses.</p>
+
+<p>OmegaRx&reg; liquid-the ideal choice for small children or individuals who need a higher daily dose of EPA and DHA to reduce cellular inflammation.</p>
+
+<p>EicoRx-contains extra gamma linolenic acid (GLA) for improved athletic performance</p>
+
+<p>Daily Essentials-contains 4 OmegaRx&reg; capsules and 1 capsule of purified maqui polyphenol extract in a convenient sachet package that you can take with you anywhere and anytime to ensure the minimum levels of EPA and DHA as well as polyphenols that you need on a daily basis.</p>
+</div>
+-->
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 45px;"></div>
+
+<div class="row-fluid">
+<div class="span12"><a href="pharmaceutical-grade-fish-oil-secrets.html"><img src="bootstrapfiles/dirty-bannersmallnotext1.png"></a></div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 55px;"></div>
+
+<div class="row-fluid">
+<div class="span12">
+<p style="font-size:34px; color:#6f6f6f;">What You Need to Know About Dr. Sears&rsquo; OmegaRx&reg; Products</p>
+</div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 40px;"></div>
+
+<div class="accordion" id="accordion2">
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle collapsed" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseOne" style="font-size:24px;">+ &nbsp; &nbsp; Which Zone Omega-3 is right for you?</a></div>
+
+<div class="accordion-body collapse" id="collapseOne" style="height: 0px;">
+<div class="accordion-inner">
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+<!--
+<p>OmegaRx&reg; capsules-the ideal choice for those who only need a maintenance dose of EPA and DHA and for when you travel if you take larger doses.</p>
+
+<p>OmegaRx&reg; liquid-the ideal choice for small children or individuals who need a higher daily dose of EPA and DHA to reduce cellular inflammation.</p>
+
+<p>EicoRx-contains extra gamma linolenic acid (GLA) for improved athletic performance</p>
+
+<p>Daily Essentials-contains 4 OmegaRx&reg; capsules and 1 capsule of purified maqui polyphenol extract in a convenient sachet package that you can take with you anywhere and anytime to ensure the minimum levels of EPA and DHA as well as polyphenols that you need on a daily basis.</p>
+-->
+
+    <img src="bootstrapfiles/omega/omega-rightchart.jpg" usemap="#omegaMap" id="omega">
+    <map name="omegaMap" id="omega">
+      <area shape="rect" coords="216,3,375,196" href="http://shop.zonediet.com/product/detail/104.aspx?">
+      <area shape="rect" coords="377,3,536,196" href="http://shop.zonediet.com/product/detail/101.aspx?">
+      <area shape="rect" coords="537,4,695,195" href="http://shop.zonediet.com/product/detail/99.aspx?">
+      <area shape="rect" coords="697,4,861,197" href="http://shop.zonediet.com/product/detail/1001.aspx?">
+    </map></div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseOneAndaHalf" style="font-size:24px;">+ &nbsp; &nbsp; Why do you need Omega-3 fatty acids? </a></div>
+
+<div class="accordion-body collapse" id="collapseOneAndaHalf" style="height: 0px;">
+<div class="accordion-inner span10">Omega-3 fatty acids are the dietary building blocks to make powerful anti-inflammatory hormones. Without adequate levels of omega-3 fatty acids in the diet, cellular inflammation increases. Furthermore, they are critical for brain function. That&rsquo;s why your grandmother told you that fish was brain food. Dr. Sears recommends at least 2.5 grams of EPA and DHA on a daily basis which you can get from just 4 OmegaRx capsules.</div>
+</div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseTwo" style="font-size:24px;">+ &nbsp; &nbsp; Why not just eat more fish? </a></div>
+
+<div class="accordion-body collapse" id="collapseTwo" style="height: 0px;">
+<div class="accordion-inner span10">To get the 2.5 grams of EPA & DHA omega-3 fatty acids Dr. Sears recommends you would have to consume either (a) 7 pounds of lobster per day, or (b) 2 pounds of tuna fish per day, or (c) one-quarter of a pound of farm-raised salmon per day. Unfortunately, these sources are either too expensive (lobster) or have high levels of toxins (tuna and farm-raised salmon). This is why ultra-refined OmegaRx is your best choice to get the 2.5 grams of omega-3 fatty acids for brain health and the reduction of cellular inflammation throughout your body at the lowest possible cost. Just 4 capsules daily of OmegaRx provides you with the recommended 2.5 grams of EPA & DHA omega-3 fatty acids.</div>
+</div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseTwoandaHalf" style="font-size:24px;">+ &nbsp; &nbsp; What are the primary toxins found in Omega-3 fatty acids? </a></div>
+
+<div class="accordion-body collapse" id="collapseTwoandaHalf" style="height: 0px;">
+<div class="accordion-inner span10">The primary toxins found in crude fish oil are mercury and PCBs. The mercury is easily removed since it binds to the protein and is easily separated in the initial purification. PCBs are extremely difficult to remove. Thus, the levels of PCBs in a fish oil product are the true test of product purity. Dr. Sears makes PCB removal the #1 priority in his products. You can see in the following graph how his standards compare to others in the fish oil industry.<br>
+<img src="bootstrapfiles/omega/pcb_chart.jpg.html" style="margin-left:-15px;"><br>
+When it comes to PCB standards in fish oil product, which would you choose?</div>
+</div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseThree" style="font-size:24px;">+ &nbsp; &nbsp; Purity counts when choosing Omega-3 fatty acids. </a></div>
+
+<div class="accordion-body collapse" id="collapseThree" style="height: 0px;">
+<div class="accordion-inner span10">The OmegaRx&reg; brand is your guarantee of purity and potency. Purity comes from maintaining the lowest levels of PCBs possible in a fish oil product. It makes no sense to purchase any fish oil that is not extremely low in PCBs since once they enter your body, they are not coming out. Potency is based on the actual amount of EPA and DHA in the oil. Your best purchase decision is when both are optimized.</div>
+</div>
+</div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle collapsed" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseFour" style="font-size:24px;">+ &nbsp; &nbsp; View our 3rd party testing for every lot of Zone Omega-3 fatty acids. </a></div>
+
+<div class="accordion-body collapse" id="collapseFour" style="height: 0px;">
+<div class="accordion-inner span10">President Regan said &ldquo;Trust, but always verify&rdquo; when it comes to arms control. The same is true of the fish oil quality. We check every batch of finished product and post the results of that lot number on our website. Sure, it costs a lot of money, but our consumers deserve to know. There might be 5-star fish oils, but there is only one 6-star. That&rsquo;s OmegaRx&reg; because it has to meet the strict standards of Dr. Sears since his name is on every bottle.
+<div id="all_purity_reports">&nbsp;
+<p>Click on the links below to view Zone Omega-3 third-party testing reports:</p>
+<span><a class="fancybox" href="omega-3-fish-oils.html#purity_data_99">Zone EicoRx&trade; - 120 Capsules</a></span><br>
+<span><a class="fancybox" href="omega-3-fish-oils.html#purity_data_104">OmegaRx - 120 Capsules</a></span><br>
+<span><a class="fancybox" href="omega-3-fish-oils.html#purity_data_101">OmegaRx - 8oz Liquid</a></span><br>
+<span><a class="fancybox" href="omega-3-fish-oils.html#purity_data_1001">Dr. Sears&#39; Daily Essentials - OmegaRx &amp; Polyphenols XT (28 Day Supply)</a></span><br><p>Click on the links below to view Zone Omega-3 third-party testing reports:</p><span><a href="omega-3-fish-oils.html#purity_data_99" class="fancybox">Zone EicoRx™ Fish Oil with GLA - 120 Capsules</a></span><br><span><a href="omega-3-fish-oils.html#purity_data_104" class="fancybox">Dr. Sears&#39; OmegaRx Fish Oil - 120 Capsules</a></span><br><span><a href="omega-3-fish-oils.html#purity_data_101" class="fancybox">Dr. Sears&#39; OmegaRx Fish Oil - 8oz Liquid</a></span><br><span><a href="omega-3-fish-oils.html#purity_data_1001" class="fancybox">Dr. Sears&#39; Daily Essentials - OmegaRx &amp; MaquiRx (28 Day Supply)</a></span><br></div>
+</div>
+</div>
+</div><div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div><div class="accordion-group"><div class="accordion-heading"><a class="accordion-toggle collapsed" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseFive" style="font-size:24px;">+ &nbsp; &nbsp; What You Need To Know About Fish Oil Purity?</a></div><div class="accordion-body collapse" id="collapseFive" style="height: 0px;"><div class="accordion-inner span10">Although none of the marketing companies of the three primary brands (OmegaRx, ProOmega, and Lovaza) of omega-3 products actually make their own fish oil products, they do set standards for raw materials they use for those products they sell.  The more you know about these standards, the better the product choice you can make for yourself.All omega-3 fatty acid concentrate products come from the same source, anchovies and sardines off the coasts of Peru and Chile.  What separates the quality of fish oil is the purity and potency of the final products that can be quantified by the following tests.<br><br><strong>PCB Levels</strong><br>All omega-3 fatty acid products derived from fish oil will contain PCBs.  To state otherwise is simply false.  The question is the levels of PCBs in the finished product.  The lower the levels of PCBs in a product, the higher the purity.  Unlike other brands, Zone Labs has the strictest standards in the industry for the omega-3 products it uses.  The international standard for the upper limit of PCBs is 90 parts per billion (ppb).  That is fine for a health food grade product, but not for a professional grade one.  At Zone Labs, our upper limit for PCBs is 5 ppb, which is 18 times more rigid than commonly used international standards.  However, PCB levels will vary from lot to lot.  This is why Zone Labs is the only company of the three major brands that posts the levels of PCBs on each lot of its omega-3 products on its website for all to see.  Testing for PCBs is expensive, but it is your guarantee of our commitment to product excellence and purity. <br><br><strong>Totox Levels</strong><br>Omega-3 concentrates are very prone to oxidation.  Even after they are bottled or put into a soft gelatin capsules, oxidation of the omega-3 fatty acids will continue.  The World Health Organization (WHO) has developed strict standards to determine whether or not any edible oil is rancid and therefore whether it is suitable for human consumption.  That standard is based on Total Oxidation (Totox) levels in the product actually being used.  This is a rigid standard that governs all edible oil trading in the world.  Since omega-3 fatty acid production are exceptionally prone to oxidation, Zone Labs is the only company that posts the Totox levels on the finished product (not the raw materials) for every lot of omega-3 fatty acid product we make.<br><br><strong>Fatty Acid Levels</strong><br>Like PCB and Totox levels, the levels of the omega-3 fatty acids EPA and DHA are key to your ability to reduce diet-induced inflammation.  That’s why Zone Labs is the only company to post the levels of EPA and DHA in every lot of omega-3 products we sell to ensure product consistency.  More importantly, we also offer a fatty acid testing service through Zone Diagnostics (www.zonediagnostics.com) that allows you to determine the actual amount of omega-3 fatty acids you require to help manage your levels of diet-induced inflammation.<br><br><strong>Commitment to Ongoing Clinical Research</strong><br>This means actually doing the research and publishing the results, not just supplying products.  Zone Labs is the only company that sets aside a percentage of their products sales for continuing clinical research by the non-profit Inflammation Research Foundation. No other company has such a commitment to omega-3 fatty acid clinical research.  Zone Labs is also the only company is headed by a leading medical researcher in the area of omega-3 fatty acid research.<br><br><strong>Omega-3 Fatty Acids Are Only a Part of an Overall Anti-inflammatory Nutrition Program</strong><br>The management of diet-induced inflammation requires the appropriate orchestration of the high-purity omega-3 fatty acids, adequate levels of polyphenols to protect the omega-3 fatty acids from oxidation in the body, and maintaining an anti-inflammatory diet to prevent the build-up of diet-induced inflammation.  Zone Labs is the only company that offers a complete anti-inflammatory nutrition program for you.  That’s why Zone Labs is the leader in anti-inflammation nutrition through our commitment to Evidence-Based Wellness®. </div></div>
+
+<div class="span12"><img src="bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading"><a class="accordion-toggle collapsed" data-parent="#accordion2" data-toggle="collapse" href="omega-3-fish-oils.html#collapseSix" style="font-size:24px;">+ &nbsp; &nbsp; How do you know if you are taking enough OmegaRx&reg; to make a difference? </a></div>
+
+<div class="accordion-body collapse" id="collapseSix" style="height: 0px;">
+<div class="accordion-inner span10">Even taking OmegaRx&reg; will not make a significant difference unless you are taking enough. That&rsquo;s why we say &ldquo;test, don&rsquo;t guess&rdquo;. Using a simple finger-prick test from Zone Diagnostics, you can determine if you are taking the right levels OmegaRx&reg; that you need to reduce your levels of cellular inflammation. Learn more about testing your levels of cellular inflammation at www.ZoneDiagnostics.com.</div>
+</div>
+</div>
+<!--
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOneAndaHalf" style="font-size:24px;">
++ &nbsp; &nbsp; Why Do You Need Omega-3 Fatty Acids?
+</a>
+</div>
+<div id="collapseOneAndaHalf" class="accordion-body collapse" style="height: 0px;">
+<div class="accordion-inner">
+Omega-3 fatty acids are the dietary building blocks to make powerful anti-inflammatory hormones. Without adequate levels of Omega-3 fatty acids in the diet, cellular inflammation increases.
+</div>
+</div>
+</div>
+
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" style="font-size:24px;">
++ &nbsp; &nbsp; What are the primary toxins found in Omega-3 fatty acids?
+</a>
+</div>
+<div id="collapseTwo" class="accordion-body collapse" style="height: 0px;">
+<div class="accordion-inner">
+The primary toxins found in crude fish oil are mercury and PCBs.  The mercury is easily removed since it binds to the protein is easily separated in the initial purification.  PCBs are they are extremely difficult to remove.  Thus the levels of PCBs in a fish oil product that is the true test of product purity.  Dr. Sears makes PCB removal the #1 priority in his products.  You can see in the following graph how his standards compare to others in the fish oil industry.<br />
+	<img src="bootstrapfiles/omega/pcb_chart.jpg" style="margin-left:-15px;"><br />
+When it comes to PCB standards on the levels in fish oil product, which would you choose?
+</div>
+</div>
+</div>
+
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" style="font-size:24px;">
++ &nbsp; &nbsp; Purity counts when choosing Omega-3 fatty acids
+</a>
+</div>
+<div id="collapseThree" class="accordion-body collapse" style="height: 0px;">
+<div class="accordion-inner">
+The OmegaRx&reg; brand is your guarantee of purity and potency. Purity comes from maintaining the lowest levels of PCBs possible in a fish oil product. It makes no sense to purchase any fish oil that is not extremely low in PCBs since once they enter your body, they are not coming out. Potency is based on the actual amount of EPA and DHA in the oil.  Your best purchase decision is when both are optimized.
+</div>
+</div>
+</div>
+
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" style="font-size:24px;">
++ &nbsp; &nbsp; Our 3rd party testing for every lot of Zone Omega-3 fatty acids is your guarantee.
+</a>
+</div>
+<div id="collapseFour" class="accordion-body collapse">
+<div class="accordion-inner">
+President Regan said &ldquo;Trust, but always verify&rsquo; when it comes to arms control.  The same is true of the fish oil quality. We check every batch of finished product and post the results of that lot number on our website. Sure, it costs a lot of money, but our consumers deserve to know. There might be 5-star fish oils, but there is only one 6-star. That&#39;s OmegaRx&reg; because it has to meet the strict standards of Dr. Sears since his name is on every bottle.
+</div>
+</div>
+</div>
+
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:1px; height: 25px;"></div>
+
+
+<div class="accordion-group">
+<div class="accordion-heading">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" style="font-size:24px;">
++ &nbsp; &nbsp; How do you know if you are take enough OmegaRx&reg; to make a difference?
+</a>
+</div>
+<div id="collapseFive" class="accordion-body collapse">
+<div class="accordion-inner">
+Even taking the OmegaRx&reg; will not make a significant difference unless you taking enough. That&#39;s why we say â€œtest, don&#39;t guessâ€. Using a simple finger-prick test from Zone Diagnostics, you can determine if you are taking the right levels OmegaRx&reg; that you need to reduce your levels of cellular inflammation.
+</div>
+</div>
+</div>
+-->
+
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div></div>
+
+
+
+<div class="container">
+
+    <style type="text/css">
+
+    /* FOOTER
+    -------------------------------------------------- */
+    .footer-text{
+        font-size: 12px;
+        }
+
+    .footer-image {
+	    margin-left:auto;
+	    margin-right:auto;
+	     width:85%;
+    }
+
+    .footer-text ul{
+        list-style-type: none;
+    }
+    .footer{
+        background-color:#E4E4E4;
+        padding: 15px 30px 10px 10px;
+      }
+
+
+    </style>
+
+    
+
+
+
+    <div class="container">
+        <hr>
+
+        <footer class="footer">
+            <div class="row-fluid footer-text">
+                <div class="span1">&nbsp;</div>
+                <div class="span2">
+                    <ul>
+                        <li><strong>MEDIA</strong></li>
+
+                        <li><a href="press-room.html">Press Room</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="customer-service.html">NEED HELP?</a></strong></li>
+
+                        <li><a href="customer-service.html">Customer Service</a></li>
+
+                        <li><a href="shipping-information.html">Shipping Information</a></li>
+
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                        <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                        
+                        <li><a href="return-policy.html">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="shipping-intl.html">INTERNATIONAL CUSTOMERS</a></strong></li>
+
+                        <li><strong>978-539-0100</strong></li>
+
+                        <li><a href="mailto:internationalorders@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong>CONTACT US</strong></li>
+
+                        <li><strong>800-404-8171</strong></li>
+
+                        <li><a href="mailto:customerservice@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+                
+                <div class="span2">
+					<a href="http://www.youtube.com/zoneadmin/"><img src="images/youtube.png"></a><img src="bootstrapfiles/spacer.gif" style="width:5px;height:1px;">
+                    <a href="http://www.facebook.com/TheZoneDiet"><img src="images/facebook.png"></a><img src="bootstrapfiles/spacer.gif" style="width:5px;height:5px;">
+                    <a href="https://twitter.com/thezonediet/"><img src="images/twitter.png"></a>
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+        </footer><br>
+
+<!--
+        <div class="container">
+            <div class="footer-image"><img src="/bootstrapfiles/footer_images/zone_logos.png"> <img src="/bootstrapfiles/footer_images/diagnoztics_logos.png"> <img src="/bootstrapfiles/footer_images/zonehealth_logo.png"> <img src="/bootstrapfiles/spacer.gif"> <img src="/bootstrapfiles/footer_images/youtube.png"> <img src="/bootstrapfiles/footer_images/twitter.png"> <img src="/bootstrapfiles/footer_images/facebook.png"></div>
+        </div>
+-->
+
+<!--
+        <div class="row-fluid">
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:242px; height: 25px;"></div>
+        </div>
+-->
+
+       <p class="pull-right"><a href="omega-3-fish-oils.html#">Back to top</a></p>
+
+       <script type="text/javascript">
+           var currentTime = new Date()
+           //var month = currentTime.getMonth() + 1
+           //var day = currentTime.getDate()
+           var year = currentTime.getFullYear()
+           document.write("&copy" + year + " Zone Labs Inc., All Rights Reserved")
+        </script>
+
+    </div>
+
+            <!-- Le javascript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="bootstrapfiles/jquery.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-transition.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-alert.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-modal.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-dropdown.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-scrollspy.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-tab.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-tooltip.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-popover.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-button.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-collapse.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-carousel.js" type="text/javascript">
+</script> <script src="bootstrapfiles/bootstrap-typeahead.js" type="text/javascript">
+</script>
+ <script src="bootstrapfiles/prettify.js"></script>
+<script src="bootstrapfiles/bootstrap-datepicker.js" type="text/javascript">
+</script>
+<script src="js/jquery.cookie.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="js/fancybox/source/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack-v=2.1.5.js"></script>
+<link rel="stylesheet" href="js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.js"></script>
+<script type="text/javascript" src="js/fancybox/source/helpers/jquery.fancybox-media-v=1.0.6.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+		$('.datepicker').datepicker();
+		if($.cookie('mackerelu'))
+		{
+			$.cookie('slogin', '1', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+		}
+		else if($.cookie('slogin'))
+		{
+			if($.cookie('slogin') == '1')
+			{
+				$.cookie('slogin', '0', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+			}
+		}
+	});
+</script>
+<!-- BEGIN: Google Trusted Stores -->
+<script type="text/javascript">
+    var gts = gts || [];
+
+    gts.push(["id", "404041"]);
+    gts.push(["locale", "en_US"]);
+    //gts.push(["google_base_offer_id", "ITEM_GOOGLE_SHOPPING_ID"]);
+    //gts.push(["google_base_subaccount_id", "ITEM_GOOGLE_SHOPPING_ACCOUNT_ID"]);
+    //gts.push(["google_base_country", "ITEM_GOOGLE_SHOPPING_COUNTRY"]);
+    //gts.push(["google_base_language", "ITEM_GOOGLE_SHOPPING_LANGUAGE"]);
+
+    (function () {
+        var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+        var gts = document.createElement("script");
+        gts.type = "text/javascript";
+        gts.async = true;
+        gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(gts, s);
+    })();
+</script>
+<!-- END: Google Trusted Stores -->
+</div></div></div><div id="supp_facts_104" style="DISPLAY: none"><img src="images/msitems/supplement-facts/104.png"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB002978_Expires_June_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB002978 Expires June 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB002978 Expires June 1 2014.png" alt="Omega Rx 120 Count Lot SB002978 Expires June 1 2014"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB003043_Expires_July_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB003043 Expires July 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB003043 Expires July 1 2014.png" alt="Omega Rx 120 Count Lot SB003043 Expires July 1 2014"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB003604_Expires_February_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB003604 Expires February 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB003604 Expires February 1 2015.png" alt="Omega Rx 120 Count Lot SB003604 Expires February 1 2015"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB003615_Expires_March_1_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB003615 Expires March 1 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB003615 Expires March 1 2016.png" alt="Omega Rx 120 Count Lot SB003615 Expires March 1 2016"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB003637_Expires_June_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB003637 Expires June 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB003637 Expires June 1 2015.png" alt="Omega Rx 120 Count Lot SB003637 Expires June 1 2015"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB003767_Expires_April_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB003767 Expires April 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB003767 Expires April 1 2015.png" alt="Omega Rx 120 Count Lot SB003767 Expires April 1 2015"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB004283_Expires_August_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB004283 Expires August 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB004283 Expires August 1 2015.png" alt="Omega Rx 120 Count Lot SB004283 Expires August 1 2015"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB004478_Expires_December_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB004478 Expires December 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB004478 Expires December 1 2015.png" alt="Omega Rx 120 Count Lot SB004478 Expires December 1 2015"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB004626_Expires_January_1_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB004626 Expires January 1 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB004626 Expires January 1 2016.png" alt="Omega Rx 120 Count Lot SB004626 Expires January 1 2016"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB005132_Expires_July_9_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB005132 Expires July 9 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB005132 Expires July 9 2016.png" alt="Omega Rx 120 Count Lot SB005132 Expires July 9 2016"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB005133_Expires_July_9_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB005133 Expires July 9 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB005133 Expires July 9 2016.png" alt="Omega Rx 120 Count Lot SB005133 Expires July 9 2016"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB005246_Expires_August_14_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB005246 Expires August 14 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB005246 Expires August 14 2016.png" alt="Omega Rx 120 Count Lot SB005246 Expires August 14 2016"></div><div id="purity-reports_104_Omega_Rx_120_Count_Lot_SB005520_Expires_Nov_1_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/104/Omega Rx 120 Count Lot SB005520 Expires Nov 1 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/104/Omega Rx 120 Count Lot SB005520 Expires Nov 1 2016.png" alt="Omega Rx 120 Count Lot SB005520 Expires Nov 1 2016"></div><div class="purity_data" style="DISPLAY: none" id="purity_data_104">
+<h2>Independent Third-Party Testing Reports</h2>
+<ul><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB002978_Expires_June_1_2014" class="fancybox">Omega Rx 120 Count Lot SB002978 Expires June 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB003043_Expires_July_1_2014" class="fancybox">Omega Rx 120 Count Lot SB003043 Expires July 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB003604_Expires_February_1_2015" class="fancybox">Omega Rx 120 Count Lot SB003604 Expires February 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB003615_Expires_March_1_2016" class="fancybox">Omega Rx 120 Count Lot SB003615 Expires March 1 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB003637_Expires_June_1_2015" class="fancybox">Omega Rx 120 Count Lot SB003637 Expires June 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB003767_Expires_April_1_2015" class="fancybox">Omega Rx 120 Count Lot SB003767 Expires April 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB004283_Expires_August_1_2015" class="fancybox">Omega Rx 120 Count Lot SB004283 Expires August 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB004478_Expires_December_1_2015" class="fancybox">Omega Rx 120 Count Lot SB004478 Expires December 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB004626_Expires_January_1_2016" class="fancybox">Omega Rx 120 Count Lot SB004626 Expires January 1 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB005132_Expires_July_9_2016" class="fancybox">Omega Rx 120 Count Lot SB005132 Expires July 9 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB005133_Expires_July_9_2016" class="fancybox">Omega Rx 120 Count Lot SB005133 Expires July 9 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB005246_Expires_August_14_2016" class="fancybox">Omega Rx 120 Count Lot SB005246 Expires August 14 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_104_Omega_Rx_120_Count_Lot_SB005520_Expires_Nov_1_2016" class="fancybox">Omega Rx 120 Count Lot SB005520 Expires Nov 1 2016</a></li></ul></div><div id="supp_facts_101" style="DISPLAY: none"><img src="images/msitems/supplement-facts/101.png"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_M01087AL_Expires_March_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot M01087AL Expires March 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot M01087AL Expires March 1 2014.png" alt="Omega Rx Liquid Lot M01087AL Expires March 1 2014"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_M06368AL_Expires_July_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot M06368AL Expires July 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot M06368AL Expires July 1 2014.png" alt="Omega Rx Liquid Lot M06368AL Expires July 1 2014"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_M09513AL_Expires_November_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot M09513AL Expires November 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot M09513AL Expires November 1 2014.png" alt="Omega Rx Liquid Lot M09513AL Expires November 1 2014"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_M12681AL_Expires_January_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot M12681AL Expires January 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot M12681AL Expires January 1 2015.png" alt="Omega Rx Liquid Lot M12681AL Expires January 1 2015"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_N04231AL_Expires_April_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot N04231AL Expires April 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot N04231AL Expires April 1 2015.png" alt="Omega Rx Liquid Lot N04231AL Expires April 1 2015"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_N06337AL_Expires_June_1_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot N06337AL Expires June 1 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot N06337AL Expires June 1 2016.png" alt="Omega Rx Liquid Lot N06337AL Expires June 1 2016"></div><div id="purity-reports_101_Omega_Rx_Liquid_Lot_N11617AL_Expires_December_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/101/Omega Rx Liquid Lot N11617AL Expires December 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/101/Omega Rx Liquid Lot N11617AL Expires December 1 2015.png" alt="Omega Rx Liquid Lot N11617AL Expires December 1 2015"></div><div class="purity_data" style="DISPLAY: none" id="purity_data_101">
+<h2>Independent Third-Party Testing Reports</h2>
+<ul><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_M01087AL_Expires_March_1_2014" class="fancybox">Omega Rx Liquid Lot M01087AL Expires March 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_M06368AL_Expires_July_1_2014" class="fancybox">Omega Rx Liquid Lot M06368AL Expires July 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_M09513AL_Expires_November_1_2014" class="fancybox">Omega Rx Liquid Lot M09513AL Expires November 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_M12681AL_Expires_January_1_2015" class="fancybox">Omega Rx Liquid Lot M12681AL Expires January 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_N04231AL_Expires_April_1_2015" class="fancybox">Omega Rx Liquid Lot N04231AL Expires April 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_N06337AL_Expires_June_1_2016" class="fancybox">Omega Rx Liquid Lot N06337AL Expires June 1 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_101_Omega_Rx_Liquid_Lot_N11617AL_Expires_December_1_2015" class="fancybox">Omega Rx Liquid Lot N11617AL Expires December 1 2015</a></li></ul></div><div id="supp_facts_99" style="DISPLAY: none"><img src="images/msitems/supplement-facts/99.png"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB002876_Expires_June_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB002876 Expires June 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB002876 Expires June 1 2014.png" alt="EicoRx 120 Count Lot SB002876 Expires June 1 2014"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB003342_Expires_November_1_2014" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB003342 Expires November 1 2014.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB003342 Expires November 1 2014.png" alt="EicoRx 120 Count Lot SB003342 Expires November 1 2014"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB003701_Expires_March_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB003701 Expires March 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB003701 Expires March 1 2015.png" alt="EicoRx 120 Count Lot SB003701 Expires March 1 2015"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB004186_Expires_July_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB004186 Expires July 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB004186 Expires July 1 2015.png" alt="EicoRx 120 Count Lot SB004186 Expires July 1 2015"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB004359_Expires_September_1_2015" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB004359 Expires September 1 2015.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB004359 Expires September 1 2015.png" alt="EicoRx 120 Count Lot SB004359 Expires September 1 2015"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB004805_SB004806_Expires_March_1_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB004805 SB004806 Expires March 1 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB004805 SB004806 Expires March 1 2016.png" alt="EicoRx 120 Count Lot SB004805 SB004806 Expires March 1 2016"></div><div id="purity-reports_99_EicoRx_120_Count_Lot_SB005079_Expires_July_8_2016" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/99/EicoRx 120 Count Lot SB005079 Expires July 8 2016.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/99/EicoRx 120 Count Lot SB005079 Expires July 8 2016.png" alt="EicoRx 120 Count Lot SB005079 Expires July 8 2016"></div><div class="purity_data" style="DISPLAY: none" id="purity_data_99">
+<h2>Independent Third-Party Testing Reports</h2>
+<ul><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB002876_Expires_June_1_2014" class="fancybox">EicoRx 120 Count Lot SB002876 Expires June 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB003342_Expires_November_1_2014" class="fancybox">EicoRx 120 Count Lot SB003342 Expires November 1 2014</a></li><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB003701_Expires_March_1_2015" class="fancybox">EicoRx 120 Count Lot SB003701 Expires March 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB004186_Expires_July_1_2015" class="fancybox">EicoRx 120 Count Lot SB004186 Expires July 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB004359_Expires_September_1_2015" class="fancybox">EicoRx 120 Count Lot SB004359 Expires September 1 2015</a></li><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB004805_SB004806_Expires_March_1_2016" class="fancybox">EicoRx 120 Count Lot SB004805 SB004806 Expires March 1 2016</a></li><li><a href="omega-3-fish-oils.html#purity-reports_99_EicoRx_120_Count_Lot_SB005079_Expires_July_8_2016" class="fancybox">EicoRx 120 Count Lot SB005079 Expires July 8 2016</a></li></ul></div><div id="supp_facts_1001" style="DISPLAY: none"><img src="images/msitems/supplement-facts/1001.png"></div><div id="purity-reports_1001_Daily_Essentials__Lot_6880-K2" class="fancybox" style="DISPLAY: none"><div style="text-align:right;" onclick="window.open('/purity-reports/1001/Daily Essentials  Lot 6880-K2.pdf');"><a style="cursor:pointer;">Printer Friendly Version<img src="images/PDF.png"></a></div><img src="purity-reports/1001/Daily Essentials  Lot 6880-K2.png" alt="Daily Essentials  Lot 6880-K2"></div><div class="purity_data" style="DISPLAY: none" id="purity_data_1001">
+<h2>Independent Third-Party Testing Reports</h2>
+<ul><li><a href="omega-3-fish-oils.html#purity-reports_1001_Daily_Essentials__Lot_6880-K2" class="fancybox">Daily Essentials  Lot 6880-K2</a></li></ul></div><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1361871-3']);
+  _gaq.push(['_setDomainName', 'zonediet.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"Kp9Uh1aon800iJ", domain:"zonediet.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Kp9Uh1aon800iJ" style="display:none" height="1" width="1" alt=""></noscript>
+<!-- End Alexa Certify Javascript -->
+</body>
+
+</html>
