@@ -1,0 +1,16 @@
+.blueLineDivider {
+background: none;
+border-bottom: 1px solid #EEEEEE;
+font-size: 1px;
+margin: 5px 0;
+padding: 0;
+}
+
+.nutfacts {
+color: #000;
+font: normal 12px/16px;
+background: #f7f7f7;
+padding: 10px;
+border: 1px solid #ebebeb;
+}
+
