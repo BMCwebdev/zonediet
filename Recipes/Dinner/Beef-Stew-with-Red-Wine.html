@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="X0QbqVZe04wEEu4xfVFwJwWomrGRpMyn-o5Jv4oFjg0">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,200italic,300,200,400italic,600,600italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../bootstrapfiles/bootstrap.css" rel="stylesheet" type="text/css">
+	    <link href="../../bootstrapfiles/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 0px;
+      margin-top: 0;
+      font-size: 0px;
+      text-shadow: 0 0px 0px rgba(0,0,0,0);
+      background-color: transparent;
+      border: 0;
+      z-index: 00;
+    }
+
+    .carousel .item {
+      height: 480px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 460px;
+      padding: 0 45px;
+      margin-top: 60px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 36px;
+
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 18px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 20px;
+    }
+
+    .rwd-break { display: none; }
+
+    .features-break { display: none; }
+
+    /* BRIAN ADDITION */
+    /*
+    #myCarousel {
+    width: 85%;
+    margin: 100px 0px 0px 0px;
+    padding-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;}
+    */
+
+    /* 2ND OPTION ONLY TO MAKE ROOM FOR NAV BAR added padding to center smaller image */
+    #myCarousel {
+    margin: 100px 0px 40px 0px;
+    /* padding: 0px 100px */
+    width: 1024px;
+    margin-left:auto;
+    margin-right:auto;
+    position:inherit;
+    }
+
+    #slider-fixed-banner{
+    margin: 0px 0px 0px 0px;
+    }
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: left;
+    }
+    .marketing h2 {
+      font-weight: normal;
+      padding-left: 9px;
+    }
+    .marketing h2 .number {
+    color:#7d0d0d;
+    display:inline;
+    }
+
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+      display:inline;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .features-number {
+        font-weight: 600;
+        font-size: 31.5px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+        float:left;
+        padding-right: 10px;
+        padding-bottom: 14px;
+        padding-top: 7px;
+
+    }
+    .features-text{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 0px;
+        padding-top: 10px;
+
+    }
+
+    .features-text-red {
+        color:#ED3945;
+    }
+
+    .newsletter-text-red {
+        color:#ED3945;
+        font-size: 16px;
+        font-family:  "OpenSans", sans-serif;
+        text-transform: uppercase;
+    }
+
+    /* NEWSLETTER SIGN UP
+    -------------------------------------------------- */
+/*
+    .gfc-result .gf-title {
+    color: #ED3945;
+    text-decoration: underline;
+    }
+
+    .gfc-result .gf-title:hover {
+    color: #ED3945;
+    text-decoration: none;
+    }
+*/
+
+
+
+
+/*     COLOR OF BLOG LINK */
+    .gf-title{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+        .gf-title a{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+/*
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+
+      .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 24px;
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 12px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 1px;
+    }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel img {
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 20px;
+        margin-top: 60px;
+      }
+      .carousel-caption h1 {
+        font-size: 20px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 12px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+*/
+    </style><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../apple-touch-icon.png">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <style type="text/css" id="holderjs-style">
+.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+    </style>
+
+
+
+
+
+<style>
+
+
+  body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+              .skybar{
+        position:relative;
+	    top:-27px;
+	    left:70px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+              .skybar a{
+        position:relative;
+	    left:30px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+    .navbar .navbar-inner {
+      border: 0;
+      background: #eeeeee; /* Old browsers */
+      background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    }
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 102%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 14%;
+/*         font-size: 13px; */
+        line-height: 30px;
+      }
+
+      .navbar .nav ul li {
+        display: table-row;
+/*
+        width: 1%;
+        float: none;
+        font-size: 13px;
+*/
+      }
+
+      .navbar .nav .dropdown-menu li a {
+        text-align: left;
+      }
+
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+
+
+      .navbar{
+	  margin-top: 25px;
+/* 	  BRIAN THIS IS MOVING THE NAV SUB MENU OVER THE IMAGE */
+	  position: relative;
+      z-index: 10;
+      }
+
+
+      /* MAKE DROPDOWN WORK ON HOVER */
+    ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+}
+
+      .headertext{
+	      margin-top: -18px;
+	      font-size: 10px;
+      }
+
+          .header-number {
+        font-weight: normal;
+        font-size: 24px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+    }
+
+    .navbar-search .search-query {
+	    margin-bottom: 15px;
+    }
+
+
+</style>
+<link href="../../css/recipe-zonediet.css" rel="stylesheet" type="text/css">
+<title></title></head>
+<body>
+
+    <div class="container">
+        <div class=" row-fluid heading">
+            <div class="span3"><a href="../../index.html"><img src="../../bootstrapfiles/drsearszone.png" style="padding-top:22px;"></a></div>
+
+
+            <div class="span5 offset1 headertext">
+                <img src="../../bootstrapfiles/spacer.gif" style="width:55px; height:70px;">
+
+                <a id="headerLoginAnchor" href="../../login.html">LOG IN</a>
+
+                <img src="../../bootstrapfiles/spacer.gif" style="width:70px; height:1px;">
+
+                <img src="../../bootstrapfiles/cart.png">&nbsp;&nbsp;&nbsp;<a id="headerCartAnchor" href="http://zonediet.com/store/cart">MY CART</a>
+
+                <img src="../../bootstrapfiles/spacer.gif" style="width:30px; height:1px;">
+
+                <a id="headerIntlAnchor" href="../../shipping-intl.html">INTERNATIONAL</a>
+
+                <hr style="height:1px; margin:-17px; visibility:hidden;">
+                <img src="../../bootstrapfiles/spacer.gif" style="width:55px; height:1px;">
+               <a id="headerRegisterAnchor" href="../../register.html" style="font-size:10px;">Not Registered?
+
+
+            </a></div>
+
+            <div class="span3">
+		<form id="headerSearch" class="form-horizontal" method="get" action="/search_results">
+			<div class="input-append">
+			<input type="search" class="search-query" name="q" autocomplete="off" placeholder="Search" tabindex="1">
+			<span style="cursor:pointer;" onclick="document.getElementById('headerSearch').submit();" class="add-on"><i class="icon-search icon-large"></i> 
+			</span></div>
+		</form>
+					<br>
+					<img src="../../bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span style="font-size:14px;">ORDERS &amp; QUESTIONS</span>
+					<br>
+                    <img src="../../bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span class="header-number">800-404-8171</span>
+                
+            </div>
+        </div>
+        <div class="skybar span5 offset2"></div>
+    </div><!-- NAVBAR
+    ================================================== -->
+
+    <div class="navbar-wrapper">
+
+
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+<!--                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button> <a class="brand" href="#"><img style="height:25px; width:30px;" src="img/house.png"></a> <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+
+    <div class="nav-collapse">
+        <ul class="nav" id="mainMenuUl">
+            <li><a class="brand" href="../../index.html"><img style="height:25px; width:30px;" src="../../bootstrapfiles/home.png"></a></li>
+            <!-- <li ><a href="/zone_foods">Zone Foods</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="http://zonediet.com/store/zone-foods" style="cursor:pointer;">Zone Foods</a>
+            </li>
+            <!--<li ><a href="/2">Omega-3</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="../../omega-3-fish-oils.html" style="cursor:pointer;">Omega-3</a>
+
+<!--
+                <ul class="dropdown-menu">
+                    <li><a href="/secrets">5 Dirty Secrets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+-->
+            </li>
+
+            <li><a href="../../polyphenols.html">Polyphenols</a></li>
+
+            <li class="dropdown disabled">
+                <a href="../../shop.html" style="cursor:pointer;">Store</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="http://zonediet.com/store/zone-foods">Zone Foods</a></li>
+
+                    <li><a href="http://zonediet.com/store/omega">Omega-3</a></li>
+
+                    <li><a href="http://zonediet.com/store/polyphenols">Polyphenols</a></li>
+
+                    <li><a href="http://zonediet.com/store/supplements">Supplements</a></li>
+
+                    <li><a href="http://zonediet.com/store/zone-bars">Zone Bars</a></li>
+
+                    <li><a href="http://zonediet.com/store/skincare">Skincare</a></li>
+
+                    <li><a href="http://zonediet.com/store/books">Books&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </li>
+            <!--<li ><a href="/about_us">About Us</a></li> -->
+            
+            <li class="dropdown disabled">
+                <a href="../../about-us.html" style="cursor:pointer;">About Us</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../../about-us.html">About Dr. Sears</a></li>
+                    <li><a href="../../board.html">Scientific Advisory Board</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown disabled">
+                <a href="../../zone-tools.html" style="cursor:pointer;">Zone Tools</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../../zone-diet-overview.html">Zone Diet Overview</a></li>
+                    <li><a href="../../body-fat-calc.html">Body Fat Calculator</a></li>
+                    <li><a href="../../dining-out-tips.html">Dining Out Tips</a></li>
+                    <li><a href="../../recipes.html">Zone Recipes</a></li>
+                    <li><a href="../../Restaurant-Reviews.html">Restaurant Reviews</a></li>
+                    <li><a href="../../blog/index.html">Dr. Sears&rsquo; Blog</a></li>
+                    <li><a href="../../zone-newsletter.html">Zone Newsletters</a></li>
+                    <li><a href="../../lifestyle-video-tips.html">Lifestyle Video Tips</a></li>
+                    <li><a href="../../food-journal.html">Zone Food Journal</a></li>                    
+                    <li><a href="../../food-blocks.html">Zone Food Blocks</a></li>
+                </ul>
+            </li>
+        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+<ul class="breadcrumb"><li><a href="../../Recipes.html">Recipes</a></li><li class="divider"><span class="divider">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span></li><li><a href="../Dinner.html">Dinner</a></li><li class="divider"><span class="divider">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span></li><li class="active">Beef-Stew-With-Red-Wine</li></ul><div id="templateContent" class="container">
+<div><img src="../../bootstrapfiles/spacer.gif" style="width:1px;height:25px;"></div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div id="tools_sidebar" class="span2 aboutussidebar"><div class="well sidebar-nav">
+<ul class="nav nav-list">
+<li><a href="../../zone-diet-overview.html">Zone Diet Overview</a></li>
+<li><a href="../../body-fat-calc.html">Body Fat Calculator</a></li>
+<li><a href="../../dining-out-tips.html">Dining Out Tips</a></li>
+<li class="active"><a href="../../recipes.html">> Zone Recipes</a></li>
+<li><a href="../../restaurant-reviews.html">Restaurant Reviews</a></li>
+<li><a href="../../blog/index.html">Dr. Sears' Blog</a></li>
+<li><a href="../../zone-newsletter.html">Zone Newsletters</a></li>
+<li><a href="../../lifestyle-video-tips.html">Lifestyle Video Tips</a></li>
+<li><a href="../../food-journal.html">Zone Food Journal</a></li>
+<li><a href="../../food-blocks.html">Zone Food Blocks</a></li>
+</ul>
+</div></div><!--/span-->
+                    <div class="span10">
+					<div id="recipeContent"> 
+					
+					<div>
+<div class="row-fluid">
+<div class="span7">
+<h4 id="hRecipeNameBeef-Stew-with-Red-Wine">Beef Stew with Red Wine</h4>
+<p id="pRecipeShortDescription">Just like Mother used to make minus the potatoes.</p>
+</div>
+<div class="span5" style="text-align:right;float:right;">
+<img id="recipeImageBeef-Stew-with-Red-Wine" src="../../images/recipes/small/beef-stew-with-red-wine.jpg">
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+
+<div class="row-fluid">
+<div class="span6" style="text-align:right;">
+Yield:
+</div>
+<div id="dYeildBeef-Stew-with-Red-Wine" class="span6">2 Servings</div>
+</div>
+
+<div class="row-fluid">
+<div class="span6" style="text-align:right;">
+Preparation Time:
+</div>
+<div id="dRecipePrepTimeBeef-Stew-with-Red-Wine" class="span6">2 hours</div>
+</div>
+
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+
+<div class="row-fluid">
+<div class="span12">
+<h4 class="clear-left">Ingredients:
+</h4></div>
+</div>
+
+
+<div id="ingredientList"><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1 1/2 tsps</div>
+    <div class="span6" style="font-style:italic;">Olive oil</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">6 oz</div>
+    <div class="span6" style="font-style:italic;">Boneless beef - cubed</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1 1/2 cups</div>
+    <div class="span6" style="font-style:italic;">Onion - finely sliced</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">2</div>
+    <div class="span6" style="font-style:italic;">Carrots - chopped</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1/4 cup</div>
+    <div class="span6" style="font-style:italic;">Finely chopped parsley</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">2 cloves</div>
+    <div class="span6" style="font-style:italic;">Garlic - pressed or chopped</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1</div>
+    <div class="span6" style="font-style:italic;">Bay leaf</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1/2 tsp</div>
+    <div class="span6" style="font-style:italic;">Thyme</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1/2 tsp</div>
+    <div class="span6" style="font-style:italic;">Nutmeg</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1/2 cup</div>
+    <div class="span6" style="font-style:italic;">Red wine</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">1 (14.5 oz) can</div>
+    <div class="span6" style="font-style:italic;">Diced tomatoes - with juice</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">3/4 cup</div>
+    <div class="span6" style="font-style:italic;">Kitchen Basics unsalted beef stock</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;"></div>
+    <div class="span6" style="font-style:italic;">Salt and pepper - (to taste)</div>
+</div><div class="row-fluid">
+    <div class="span6" style="text-align:right;">2</div>
+    <div class="span6" style="font-style:italic;">Red bell peppers - cut into strips</div>
+</div></div>
+
+
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+
+<div class="row-fluid">
+<div class="span12">
+<h4>Instructions:</h4>
+<p id="pRecipeInstructionsBeef-Stew-with-Red-Wine">Preheat oven to 350°F. In an ovenproof skillet brown meat in olive oil. Remove and add onion and carrots. Cook until onion softens. Add parsley and garlic and cook for 3 minutes. Return meat to pan and mix veggies with meat. Stir in bay leaf, thyme and nutmeg. Add wine and bring to boil, stirring 4 minutes. Stir in tomatoes and stock. Season with salt and pepper. Cover and bake 1 1/2 hours. Remove and add red pepper and cook uncovered for 30 minutes or until beef is tender.</p>
+</div>
+</div>
+
+
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+
+<div class="row-fluid"><div id="dNutritionFacts" class="span12 nutfacts">Nutritional facts per serving: Calories 376; Protein 25g; Total Fat 11g; Carb. 37g; Fiber 9g</div></div>
+
+
+</div></div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+
+<div class="container">
+
+    <style type="text/css">
+
+    /* FOOTER
+    -------------------------------------------------- */
+    .footer-text{
+        font-size: 12px;
+        }
+
+    .footer-image {
+	    margin-left:auto;
+	    margin-right:auto;
+	     width:85%;
+    }
+
+    .footer-text ul{
+        list-style-type: none;
+    }
+    .footer{
+        background-color:#E4E4E4;
+        padding: 15px 30px 10px 10px;
+      }
+
+
+    </style>
+
+    
+
+
+
+    <div class="container">
+        <hr>
+
+        <footer class="footer">
+            <div class="row-fluid footer-text">
+                <div class="span1">&nbsp;</div>
+                <div class="span2">
+                    <ul>
+                        <li><strong>MEDIA</strong></li>
+
+                        <li><a href="../../press-room.html">Press Room</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="../../customer-service.html">NEED HELP?</a></strong></li>
+
+                        <li><a href="../../customer-service.html">Customer Service</a></li>
+
+                        <li><a href="../../shipping-information.html">Shipping Information</a></li>
+
+                        <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+
+                        <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                        
+                        <li><a href="../../return-policy.html">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="../../shipping-intl.html">INTERNATIONAL CUSTOMERS</a></strong></li>
+
+                        <li><strong>978-539-0100</strong></li>
+
+                        <li><a href="mailto:internationalorders@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong>CONTACT US</strong></li>
+
+                        <li><strong>800-404-8171</strong></li>
+
+                        <li><a href="mailto:customerservice@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+                
+                <div class="span2">
+					<a href="http://www.youtube.com/zoneadmin/"><img src="../../images/youtube.png"></a><img src="../../bootstrapfiles/spacer.gif" style="width:5px;height:1px;">
+                    <a href="http://www.facebook.com/TheZoneDiet"><img src="../../images/facebook.png"></a><img src="../../bootstrapfiles/spacer.gif" style="width:5px;height:5px;">
+                    <a href="https://twitter.com/thezonediet/"><img src="../../images/twitter.png"></a>
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+        </footer><br>
+
+<!--
+        <div class="container">
+            <div class="footer-image"><img src="/bootstrapfiles/footer_images/zone_logos.png"> <img src="/bootstrapfiles/footer_images/diagnoztics_logos.png"> <img src="/bootstrapfiles/footer_images/zonehealth_logo.png"> <img src="/bootstrapfiles/spacer.gif"> <img src="/bootstrapfiles/footer_images/youtube.png"> <img src="/bootstrapfiles/footer_images/twitter.png"> <img src="/bootstrapfiles/footer_images/facebook.png"></div>
+        </div>
+-->
+
+<!--
+        <div class="row-fluid">
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:242px; height: 25px;"></div>
+        </div>
+-->
+
+       <p class="pull-right"><a href="Beef-Stew-with-Red-Wine.html#">Back to top</a></p>
+
+       <script type="text/javascript">
+           var currentTime = new Date()
+           //var month = currentTime.getMonth() + 1
+           //var day = currentTime.getDate()
+           var year = currentTime.getFullYear()
+           document.write("&copy" + year + " Zone Labs Inc., All Rights Reserved")
+        </script>
+
+    </div>
+
+            <!-- Le javascript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="../../bootstrapfiles/jquery.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-transition.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-alert.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-modal.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-dropdown.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-scrollspy.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-tab.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-tooltip.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-popover.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-button.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-collapse.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-carousel.js" type="text/javascript">
+</script> <script src="../../bootstrapfiles/bootstrap-typeahead.js" type="text/javascript">
+</script>
+ <script src="../../bootstrapfiles/prettify.js"></script>
+<script src="../../bootstrapfiles/bootstrap-datepicker.js" type="text/javascript">
+</script>
+<script src="../../js/jquery.cookie.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../../js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="../../js/fancybox/source/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="../../js/fancybox/source/jquery.fancybox.pack-v=2.1.5.js"></script>
+<link rel="stylesheet" href="../../js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="../../js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.js"></script>
+<script type="text/javascript" src="../../js/fancybox/source/helpers/jquery.fancybox-media-v=1.0.6.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+		$('.datepicker').datepicker();
+		if($.cookie('mackerelu'))
+		{
+			$.cookie('slogin', '1', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+		}
+		else if($.cookie('slogin'))
+		{
+			if($.cookie('slogin') == '1')
+			{
+				$.cookie('slogin', '0', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+			}
+		}
+	});
+</script>
+<!-- BEGIN: Google Trusted Stores -->
+<script type="text/javascript">
+    var gts = gts || [];
+
+    gts.push(["id", "404041"]);
+    gts.push(["locale", "en_US"]);
+    //gts.push(["google_base_offer_id", "ITEM_GOOGLE_SHOPPING_ID"]);
+    //gts.push(["google_base_subaccount_id", "ITEM_GOOGLE_SHOPPING_ACCOUNT_ID"]);
+    //gts.push(["google_base_country", "ITEM_GOOGLE_SHOPPING_COUNTRY"]);
+    //gts.push(["google_base_language", "ITEM_GOOGLE_SHOPPING_LANGUAGE"]);
+
+    (function () {
+        var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+        var gts = document.createElement("script");
+        gts.type = "text/javascript";
+        gts.async = true;
+        gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(gts, s);
+    })();
+</script>
+<!-- END: Google Trusted Stores -->
+</div></div></div><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1361871-3']);
+  _gaq.push(['_setDomainName', 'zonediet.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"Kp9Uh1aon800iJ", domain:"zonediet.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Kp9Uh1aon800iJ" style="display:none" height="1" width="1" alt=""></noscript>
+<!-- End Alexa Certify Javascript -->
+</body>
+
+</html>

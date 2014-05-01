@@ -1,0 +1,3088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="X0QbqVZe04wEEu4xfVFwJwWomrGRpMyn-o5Jv4oFjg0">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic,200italic,300,200,400italic,600,600italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrapfiles/bootstrap.css" rel="stylesheet" type="text/css">
+	    <link href="../bootstrapfiles/bootstrap-datepicker.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+
+
+
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 0px;
+      margin-top: 0;
+      font-size: 0px;
+      text-shadow: 0 0px 0px rgba(0,0,0,0);
+      background-color: transparent;
+      border: 0;
+      z-index: 00;
+    }
+
+    .carousel .item {
+      height: 480px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 460px;
+      padding: 0 45px;
+      margin-top: 60px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 36px;
+
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 18px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 20px;
+    }
+
+    .rwd-break { display: none; }
+
+    .features-break { display: none; }
+
+    /* BRIAN ADDITION */
+    /*
+    #myCarousel {
+    width: 85%;
+    margin: 100px 0px 0px 0px;
+    padding-bottom: 40px;
+    margin-left:auto;
+    margin-right:auto;}
+    */
+
+    /* 2ND OPTION ONLY TO MAKE ROOM FOR NAV BAR added padding to center smaller image */
+    #myCarousel {
+    margin: 100px 0px 40px 0px;
+    /* padding: 0px 100px */
+    width: 1024px;
+    margin-left:auto;
+    margin-right:auto;
+    position:inherit;
+    }
+
+    #slider-fixed-banner{
+    margin: 0px 0px 0px 0px;
+    }
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: left;
+    }
+    .marketing h2 {
+      font-weight: normal;
+      padding-left: 9px;
+    }
+    .marketing h2 .number {
+    color:#7d0d0d;
+    display:inline;
+    }
+
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+      display:inline;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    .features-number {
+        font-weight: 600;
+        font-size: 31.5px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+        float:left;
+        padding-right: 10px;
+        padding-bottom: 14px;
+        padding-top: 7px;
+
+    }
+    .features-text{
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-left: 0px;
+        padding-top: 10px;
+
+    }
+
+    .features-text-red {
+        color:#ED3945;
+    }
+
+    .newsletter-text-red {
+        color:#ED3945;
+        font-size: 16px;
+        font-family:  "OpenSans", sans-serif;
+        text-transform: uppercase;
+    }
+
+    /* NEWSLETTER SIGN UP
+    -------------------------------------------------- */
+/*
+    .gfc-result .gf-title {
+    color: #ED3945;
+    text-decoration: underline;
+    }
+
+    .gfc-result .gf-title:hover {
+    color: #ED3945;
+    text-decoration: none;
+    }
+*/
+
+
+
+
+/*     COLOR OF BLOG LINK */
+    .gf-title{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+        .gf-title a{
+	    color:#4bb1ff;
+	    text-decoration: underline;
+    }
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+/*
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+      .carousel img {
+        width: auto;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+
+      .carousel-caption {
+      background-color: transparent;
+      position:inherit;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 80px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      font-size: 24px;
+    }
+
+    .carousel-caption .leadp {
+      padding-top: 15px;
+      font-size: 12px;
+
+    }
+    .carousel-caption .btn {
+      margin-top: 1px;
+    }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel img {
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 20px;
+        margin-top: 60px;
+      }
+      .carousel-caption h1 {
+        font-size: 20px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 12px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+    .rwd-break { display: inline;
+    }
+
+    .features-break { display: inline;
+    }
+
+    }
+*/
+    </style><!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../apple-touch-icon.png">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <style type="text/css" id="holderjs-style">
+.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}
+    </style>
+
+
+
+
+
+<style>
+
+
+  body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+
+              .skybar{
+        position:relative;
+	    top:-27px;
+	    left:70px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+              .skybar a{
+        position:relative;
+	    left:30px;
+	    margin-bottom: -20px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    color: #ED3945;
+	    text-decoration: none;
+    }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+    .navbar .navbar-inner {
+      border: 0;
+      background: #eeeeee; /* Old browsers */
+      background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+    }
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 102%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 14%;
+/*         font-size: 13px; */
+        line-height: 30px;
+      }
+
+      .navbar .nav ul li {
+        display: table-row;
+/*
+        width: 1%;
+        float: none;
+        font-size: 13px;
+*/
+      }
+
+      .navbar .nav .dropdown-menu li a {
+        text-align: left;
+      }
+
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+
+
+      .navbar{
+	  margin-top: 25px;
+/* 	  BRIAN THIS IS MOVING THE NAV SUB MENU OVER THE IMAGE */
+	  position: relative;
+      z-index: 10;
+      }
+
+
+      /* MAKE DROPDOWN WORK ON HOVER */
+    ul.nav li.dropdown:hover > ul.dropdown-menu{
+    display: block;
+}
+
+      .headertext{
+	      margin-top: -18px;
+	      font-size: 10px;
+      }
+
+          .header-number {
+        font-weight: normal;
+        font-size: 24px;
+    /*      line-height: 40px; */
+        color: #ED3945;
+        font-family: inherit;
+        text-rendering: optimizelegibility;
+    }
+
+    .navbar-search .search-query {
+	    margin-bottom: 15px;
+    }
+
+
+</style>
+<link href="../css/recipe-zonediet.css" rel="stylesheet" type="text/css">
+<title></title></head>
+<body>
+
+    <div class="container">
+        <div class=" row-fluid heading">
+            <div class="span3"><a href="../index.html"><img src="../bootstrapfiles/drsearszone.png" style="padding-top:22px;"></a></div>
+
+
+            <div class="span5 offset1 headertext">
+                <img src="../bootstrapfiles/spacer.gif" style="width:55px; height:70px;">
+
+                <a id="headerLoginAnchor" href="../login.html">LOG IN</a>
+
+                <img src="../bootstrapfiles/spacer.gif" style="width:70px; height:1px;">
+
+                <img src="../bootstrapfiles/cart.png">&nbsp;&nbsp;&nbsp;<a id="headerCartAnchor" href="http://zonediet.com/store/cart">MY CART</a>
+
+                <img src="../bootstrapfiles/spacer.gif" style="width:30px; height:1px;">
+
+                <a id="headerIntlAnchor" href="../shipping-intl.html">INTERNATIONAL</a>
+
+                <hr style="height:1px; margin:-17px; visibility:hidden;">
+                <img src="../bootstrapfiles/spacer.gif" style="width:55px; height:1px;">
+               <a id="headerRegisterAnchor" href="../register.html" style="font-size:10px;">Not Registered?
+
+
+            </a></div>
+
+            <div class="span3">
+		<form id="headerSearch" class="form-horizontal" method="get" action="/search_results">
+			<div class="input-append">
+			<input type="search" class="search-query" name="q" autocomplete="off" placeholder="Search" tabindex="1">
+			<span style="cursor:pointer;" onclick="document.getElementById('headerSearch').submit();" class="add-on"><i class="icon-search icon-large"></i> 
+			</span></div>
+		</form>
+					<br>
+					<img src="../bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span style="font-size:14px;">ORDERS &amp; QUESTIONS</span>
+					<br>
+                    <img src="../bootstrapfiles/spacer.gif" style="width:81px;height:1px;"><span class="header-number">800-404-8171</span>
+                
+            </div>
+        </div>
+        <div class="skybar span5 offset2"></div>
+    </div><!-- NAVBAR
+    ================================================== -->
+
+    <div class="navbar-wrapper">
+
+
+        <div class="container">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+<!--                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button> <a class="brand" href="#"><img style="height:25px; width:30px;" src="img/house.png"></a> <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+
+    <div class="nav-collapse">
+        <ul class="nav" id="mainMenuUl">
+            <li><a class="brand" href="../index.html"><img style="height:25px; width:30px;" src="../bootstrapfiles/home.png"></a></li>
+            <!-- <li ><a href="/zone_foods">Zone Foods</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="http://zonediet.com/store/zone-foods" style="cursor:pointer;">Zone Foods</a>
+            </li>
+            <!--<li ><a href="/2">Omega-3</a></li> -->
+
+            <li class="dropdown disabled">
+                <a href="../omega-3-fish-oils.html" style="cursor:pointer;">Omega-3</a>
+
+<!--
+                <ul class="dropdown-menu">
+                    <li><a href="/secrets">5 Dirty Secrets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+-->
+            </li>
+
+            <li><a href="../polyphenols.html">Polyphenols</a></li>
+
+            <li class="dropdown disabled">
+                <a href="../shop.html" style="cursor:pointer;">Store</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="http://zonediet.com/store/zone-foods">Zone Foods</a></li>
+
+                    <li><a href="http://zonediet.com/store/omega">Omega-3</a></li>
+
+                    <li><a href="http://zonediet.com/store/polyphenols">Polyphenols</a></li>
+
+                    <li><a href="http://zonediet.com/store/supplements">Supplements</a></li>
+
+                    <li><a href="http://zonediet.com/store/zone-bars">Zone Bars</a></li>
+
+                    <li><a href="http://zonediet.com/store/skincare">Skincare</a></li>
+
+                    <li><a href="http://zonediet.com/store/books">Books&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </li>
+            <!--<li ><a href="/about_us">About Us</a></li> -->
+            
+            <li class="dropdown disabled">
+                <a href="../about-us.html" style="cursor:pointer;">About Us</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../about-us.html">About Dr. Sears</a></li>
+                    <li><a href="../board.html">Scientific Advisory Board</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown disabled">
+                <a href="../zone-tools.html" style="cursor:pointer;">Zone Tools</a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="../zone-diet-overview.html">Zone Diet Overview</a></li>
+                    <li><a href="../body-fat-calc.html">Body Fat Calculator</a></li>
+                    <li><a href="../dining-out-tips.html">Dining Out Tips</a></li>
+                    <li><a href="../recipes.html">Zone Recipes</a></li>
+                    <li><a href="../Restaurant-Reviews.html">Restaurant Reviews</a></li>
+                    <li><a href="../blog/index.html">Dr. Sears&rsquo; Blog</a></li>
+                    <li><a href="../zone-newsletter.html">Zone Newsletters</a></li>
+                    <li><a href="../lifestyle-video-tips.html">Lifestyle Video Tips</a></li>
+                    <li><a href="../food-journal.html">Zone Food Journal</a></li>                    
+                    <li><a href="../food-blocks.html">Zone Food Blocks</a></li>
+                </ul>
+            </li>
+        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+<ul class="breadcrumb"><li><a href="../Recipes.html">Recipes</a></li><li class="divider"><span class="divider">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;</span></li><li class="active">Breakfast</li></ul><div id="templateContent" class="container">
+<div><img src="../bootstrapfiles/spacer.gif" style="width:1px;height:25px;"></div>
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div id="tools_sidebar" class="span2 aboutussidebar"><div class="well sidebar-nav">
+<ul class="nav nav-list">
+<li><a href="../zone-diet-overview.html">Zone Diet Overview</a></li>
+<li><a href="../body-fat-calc.html">Body Fat Calculator</a></li>
+<li><a href="../dining-out-tips.html">Dining Out Tips</a></li>
+<li class="active"><a href="../recipes.html">> Zone Recipes</a></li>
+<li><a href="../restaurant-reviews.html">Restaurant Reviews</a></li>
+<li><a href="../blog/index.html">Dr. Sears' Blog</a></li>
+<li><a href="../zone-newsletter.html">Zone Newsletters</a></li>
+<li><a href="../lifestyle-video-tips.html">Lifestyle Video Tips</a></li>
+<li><a href="../food-journal.html">Zone Food Journal</a></li>
+<li><a href="../food-blocks.html">Zone Food Blocks</a></li>
+</ul>
+</div></div><!--/span-->
+                    <div class="span10">
+					<div id="recipeContent"> 
+					<h3 class="clear-left" id="typeHeader">Breakfast Recipes</h3>
+					<div id="recipeRowApple-Cinnamon-Crepe">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorApple-Cinnamon-Crepe" href="Breakfast/Apple-Cinnamon-Crepe.html"><img id="imageApple-Cinnamon-Crepe" src="../images/recipes/small/apple-cinnamon-crepe.png.jpeg" alt="Apple - Cinnamon Crepe"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorApple-Cinnamon-Crepe" href="Breakfast/Apple-Cinnamon-Crepe.html">Apple - Cinnamon Crepe</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryApple-Cinnamon-Crepe">Contains cooked steel-cut oatmeal.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowApple-Jumble-Zinger">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorApple-Jumble-Zinger" href="Breakfast/Apple-Jumble-Zinger.html"><img id="imageApple-Jumble-Zinger" src="../images/recipes/small/apple-jumble-zinger.png" alt="Apple Jumble Zinger"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorApple-Jumble-Zinger" href="Breakfast/Apple-Jumble-Zinger.html">Apple Jumble Zinger</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryApple-Jumble-Zinger">This also makes a great lunch. Just switch out the eggs for 3 oz turkey.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowApple-N-Cheddar-Casserole">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorApple-N-Cheddar-Casserole" href="Breakfast/Apple-N-Cheddar-Casserole.html"><img id="imageApple-N-Cheddar-Casserole" src="../images/recipes/recipeMobileBlank.png" alt="Apple N'Cheddar Casserole"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorApple-N-Cheddar-Casserole" href="Breakfast/Apple-N-Cheddar-Casserole.html">Apple N'Cheddar Casserole</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryApple-N-Cheddar-Casserole">Like an apple pie topped with cheese&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowApple-Orange-Shake">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorApple-Orange-Shake" href="Breakfast/Apple-Orange-Shake.html"><img id="imageApple-Orange-Shake" src="../images/recipes/small/apple-orange-shake.jpg" alt="Apple Orange Breakfast Shake"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorApple-Orange-Shake" href="Breakfast/Apple-Orange-Shake.html">Apple Orange Breakfast Shake</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryApple-Orange-Shake">Super-easy breakfast&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowApple-Pie-Spiced-Oatmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorApple-Pie-Spiced-Oatmeal" href="Breakfast/Apple-Pie-Spiced-Oatmeal.html"><img id="imageApple-Pie-Spiced-Oatmeal" src="../images/recipes/small/apple-pie-spiced-oatmeal.png" alt="Apple Pie Spiced Oatmeal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorApple-Pie-Spiced-Oatmeal" href="Breakfast/Apple-Pie-Spiced-Oatmeal.html">Apple Pie Spiced Oatmeal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryApple-Pie-Spiced-Oatmeal">You can cook large batches of oatmeal, refrigerate it, and warm up just the amount needed.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowApple-Pork-and-Eggs-with-Strawberries">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorApple-Pork-and-Eggs-with-Strawberries" href="Breakfast/Apple-Pork-and-Eggs-with-Strawberries.html"><img id="imageApple-Pork-and-Eggs-with-Strawberries" src="../images/recipes/recipeMobileBlank.png" alt="Apple Pork and Eggs with Strawberries"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorApple-Pork-and-Eggs-with-Strawberries" href="Breakfast/Apple-Pork-and-Eggs-with-Strawberries.html">Apple Pork and Eggs with Strawberries</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryApple-Pork-and-Eggs-with-Strawberries">An alternative to eggs and bacon&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowAsparagus-Quiche">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorAsparagus-Quiche" href="Breakfast/Asparagus-Quiche.html"><img id="imageAsparagus-Quiche" src="../images/recipes/small/asparagus-quiche.png" alt="Asparagus Quiche"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorAsparagus-Quiche" href="Breakfast/Asparagus-Quiche.html">Asparagus Quiche</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryAsparagus-Quiche">This crustless quiche is totally in the Zone and perfect to serve for friends at brunch.
+
+&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBacon-and-Broccoli-Quiche-with-Fruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBacon-and-Broccoli-Quiche-with-Fruit-Salad" href="Breakfast/Bacon-and-Broccoli-Quiche-with-Fruit-Salad.html"><img id="imageBacon-and-Broccoli-Quiche-with-Fruit-Salad" src="../images/recipes/recipeMobileBlank.png" alt="Bacon and Broccoli Quiche with Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBacon-and-Broccoli-Quiche-with-Fruit-Salad" href="Breakfast/Bacon-and-Broccoli-Quiche-with-Fruit-Salad.html">Bacon and Broccoli Quiche with Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBacon-and-Broccoli-Quiche-with-Fruit-Salad">Using frozen broccoli and onions will save time, but they must be thawed.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBaked-Eggs-with-Vegetables">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBaked-Eggs-with-Vegetables" href="Breakfast/Baked-Eggs-with-Vegetables.html"><img id="imageBaked-Eggs-with-Vegetables" src="../images/recipes/small/baked-eggs-with-vegetables.jpg" alt="Baked Eggs with Vegetables"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBaked-Eggs-with-Vegetables" href="Breakfast/Baked-Eggs-with-Vegetables.html">Baked Eggs with Vegetables</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBaked-Eggs-with-Vegetables">Also great for lunch or dinner&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBaked-Oatmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBaked-Oatmeal" href="Breakfast/Baked-Oatmeal.html"><img id="imageBaked-Oatmeal" src="../images/recipes/small/baked-oatmeal.png" alt="Baked Oatmeal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBaked-Oatmeal" href="Breakfast/Baked-Oatmeal.html">Baked Oatmeal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBaked-Oatmeal">Put the servings in a food storage container, then grab and go on your way to work.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBed-and-Breakfast-Waffles">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBed-and-Breakfast-Waffles" href="Breakfast/Bed-and-Breakfast-Waffles.html"><img id="imageBed-and-Breakfast-Waffles" src="../images/recipes/small/bed-and-breakfast-waffles.png.jpeg" alt="Bed and Breakfast Waffles"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBed-and-Breakfast-Waffles" href="Breakfast/Bed-and-Breakfast-Waffles.html">Bed and Breakfast Waffles</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBed-and-Breakfast-Waffles">These waffles, made with rolled oats, are a long-time favorite for Zoners.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBlueberry-Cottage-Cheese">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBlueberry-Cottage-Cheese" href="Breakfast/Blueberry-Cottage-Cheese.html"><img id="imageBlueberry-Cottage-Cheese" src="../images/recipes/small/blueberry-cottage-cheese.png" alt="Blueberry Cottage Cheese"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBlueberry-Cottage-Cheese" href="Breakfast/Blueberry-Cottage-Cheese.html">Blueberry Cottage Cheese</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBlueberry-Cottage-Cheese">Easy to prepare and makes a colorful bowl of nutrition.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBlueberry-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBlueberry-Omelet" href="Breakfast/Blueberry-Omelet.html"><img id="imageBlueberry-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="Blueberry Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBlueberry-Omelet" href="Breakfast/Blueberry-Omelet.html">Blueberry Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBlueberry-Omelet">An unusual, tasty combination&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBlueberry-Ricotta-Oatmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBlueberry-Ricotta-Oatmeal" href="Breakfast/Blueberry-Ricotta-Oatmeal.html"><img id="imageBlueberry-Ricotta-Oatmeal" src="../images/recipes/small/blueberry-ricotta-oatmeal.png" alt="Blueberry Ricotta Oatmeal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBlueberry-Ricotta-Oatmeal" href="Breakfast/Blueberry-Ricotta-Oatmeal.html">Blueberry Ricotta Oatmeal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBlueberry-Ricotta-Oatmeal">EASY A delicious one-bowl meal&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBlueberry-Shake">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBlueberry-Shake" href="Breakfast/Blueberry-Shake.html"><img id="imageBlueberry-Shake" src="../images/recipes/small/blueberry-shake.png" alt="Blueberry Shake"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBlueberry-Shake" href="Breakfast/Blueberry-Shake.html">Blueberry Shake</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBlueberry-Shake">EASY. Tastes like a blueberry ice cream shake.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBlueberry-Yogurt-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBlueberry-Yogurt-Breakfast" href="Breakfast/Blueberry-Yogurt-Breakfast.html"><img id="imageBlueberry-Yogurt-Breakfast" src="../images/recipes/small/blueberry-yogurt-breakfast.png" alt="Blueberry Yogurt Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBlueberry-Yogurt-Breakfast" href="Breakfast/Blueberry-Yogurt-Breakfast.html">Blueberry Yogurt Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBlueberry-Yogurt-Breakfast">Super easy and a delicious way to start the day&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBlueberryMaple-Nut-Oatmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBlueberryMaple-Nut-Oatmeal" href="Breakfast/BlueberryMaple-Nut-Oatmeal.html"><img id="imageBlueberryMaple-Nut-Oatmeal" src="../images/recipes/small/blueberrymaple-nut-oatmeal.png" alt="Blueberry Maple Nut Oatmeal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBlueberryMaple-Nut-Oatmeal" href="Breakfast/BlueberryMaple-Nut-Oatmeal.html">Blueberry Maple Nut Oatmeal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBlueberryMaple-Nut-Oatmeal">Cook oatmeal the night before to save time the next morning.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-for-Nonbelievers">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-for-Nonbelievers" href="Breakfast/Breakfast-for-Nonbelievers.html"><img id="imageBreakfast-for-Nonbelievers" src="../images/recipes/small/breakfast-for-nonbelievers.png" alt="Breakfast for Nonbelievers"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-for-Nonbelievers" href="Breakfast/Breakfast-for-Nonbelievers.html">Breakfast for Nonbelievers</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-for-Nonbelievers">This recipe was created by a Zoner who wanted to prove to his friends how substantial a Zone breakfast can be.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-from-Italy">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-from-Italy" href="Breakfast/Breakfast-from-Italy.html"><img id="imageBreakfast-from-Italy" src="../images/recipes/small/breakfast-from-italy.png" alt="Breakfast from Italy"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-from-Italy" href="Breakfast/Breakfast-from-Italy.html">Breakfast from Italy</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-from-Italy">Prosciutto gives this breakfast an Italian twist.
+
+&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-Hash-with-Tomatoes">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-Hash-with-Tomatoes" href="Breakfast/Breakfast-Hash-with-Tomatoes.html"><img id="imageBreakfast-Hash-with-Tomatoes" src="../images/recipes/small/breakfast-hash-with-tomatoes.png" alt="Breakfast Hash with Tomatoes"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-Hash-with-Tomatoes" href="Breakfast/Breakfast-Hash-with-Tomatoes.html">Breakfast Hash with Tomatoes</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-Hash-with-Tomatoes">This hash variation treats Zoners to different ingredients.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-Hash">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-Hash" href="Breakfast/Breakfast-Hash.html"><img id="imageBreakfast-Hash" src="../images/recipes/small/breakfast-hash.png" alt="Breakfast Hash"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-Hash" href="Breakfast/Breakfast-Hash.html">Breakfast Hash</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-Hash">This breakfast in a bowl also tastes great for lunch or dinner.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-in-a-Bowl">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-in-a-Bowl" href="Breakfast/Breakfast-in-a-Bowl.html"><img id="imageBreakfast-in-a-Bowl" src="../images/recipes/small/breakfast-in-a-bowl.png" alt="Breakfast in a Bowl"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-in-a-Bowl" href="Breakfast/Breakfast-in-a-Bowl.html">Breakfast in a Bowl</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-in-a-Bowl">You can assemble everything but the fruit the night before so that it is a snap to prepare in the morning.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-Mousse">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-Mousse" href="Breakfast/Breakfast-Mousse.html"><img id="imageBreakfast-Mousse" src="../images/recipes/small/breakfast-mousse.png" alt="Breakfast Mousse"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-Mousse" href="Breakfast/Breakfast-Mousse.html">Breakfast Mousse</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-Mousse">EASY. Wait two minutes, and the texture will become more like a mousse than a smoothie.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-on-the-Fly">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-on-the-Fly" href="Breakfast/Breakfast-on-the-Fly.html"><img id="imageBreakfast-on-the-Fly" src="../images/recipes/small/breakfast-on-the-fly.png" alt="Breakfast on the Fly"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-on-the-Fly" href="Breakfast/Breakfast-on-the-Fly.html">Breakfast on the Fly</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-on-the-Fly">EASY. A pretty bowl of red, white and blue.
+&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-Sundae">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-Sundae" href="Breakfast/Breakfast-Sundae.html"><img id="imageBreakfast-Sundae" src="../images/recipes/small/breakfast-sundae.png" alt="Breakfast Sundae"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-Sundae" href="Breakfast/Breakfast-Sundae.html">Breakfast Sundae</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-Sundae">Vanilla and nutmeg additions give great flavor.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-Tart-and-Fruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-Tart-and-Fruit-Salad" href="Breakfast/Breakfast-Tart-and-Fruit-Salad.html"><img id="imageBreakfast-Tart-and-Fruit-Salad" src="../images/recipes/small/breakfast-tart-and-fruit-salad.png" alt="Breakfast Tart and Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-Tart-and-Fruit-Salad" href="Breakfast/Breakfast-Tart-and-Fruit-Salad.html">Breakfast Tart and Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-Tart-and-Fruit-Salad">This breakfast takes a little more time, but when it’s done, it’s company ready.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-to-Go">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-to-Go" href="Breakfast/Breakfast-to-Go.html"><img id="imageBreakfast-to-Go" src="../images/recipes/small/breakfast-to-go.png" alt="Breakfast to Go"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-to-Go" href="Breakfast/Breakfast-to-Go.html">Breakfast to Go</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-to-Go">This recipe keeps well. Make 3 servings and keep them in the refrigerator.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowBreakfast-Turkey-Patties">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorBreakfast-Turkey-Patties" href="Breakfast/Breakfast-Turkey-Patties.html"><img id="imageBreakfast-Turkey-Patties" src="../images/recipes/recipeMobileBlank.png" alt="Breakfast Turkey Patties"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorBreakfast-Turkey-Patties" href="Breakfast/Breakfast-Turkey-Patties.html">Breakfast Turkey Patties</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryBreakfast-Turkey-Patties">Great for someone who doesn't like eggs for breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCaprese-Omelet-and-Berries">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCaprese-Omelet-and-Berries" href="Breakfast/Caprese-Omelet-and-Berries.html"><img id="imageCaprese-Omelet-and-Berries" src="../images/recipes/recipeMobileBlank.png" alt="Caprese Omelet and Berries"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCaprese-Omelet-and-Berries" href="Breakfast/Caprese-Omelet-and-Berries.html">Caprese Omelet and Berries</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCaprese-Omelet-and-Berries">Mozzarella and basil bring a taste of Italy.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCarlises-Italian-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCarlises-Italian-Omelet" href="Breakfast/Carlises-Italian-Omelet.html"><img id="imageCarlises-Italian-Omelet" src="../images/recipes/small/carlises-italian-omelet.png" alt="Carlise's Italian Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCarlises-Italian-Omelet" href="Breakfast/Carlises-Italian-Omelet.html">Carlise's Italian Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCarlises-Italian-Omelet">This omelet is prepared in only 15 minutes. For more convenience, buy packages of frozen chopped onions and peppers.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCheddar-Apple-Galette">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCheddar-Apple-Galette" href="Breakfast/Cheddar-Apple-Galette.html"><img id="imageCheddar-Apple-Galette" src="../images/recipes/recipeMobileBlank.png" alt="Cheddar Apple “Galette”"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCheddar-Apple-Galette" href="Breakfast/Cheddar-Apple-Galette.html">Cheddar Apple “Galette”</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCheddar-Apple-Galette">A nice, hot breakfast that can be made without spending a long time preparing it.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCheesy-Scramble">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCheesy-Scramble" href="Breakfast/Cheesy-Scramble.html"><img id="imageCheesy-Scramble" src="../images/recipes/recipeMobileBlank.png" alt="Cheesy Scramble"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCheesy-Scramble" href="Breakfast/Cheesy-Scramble.html">Cheesy Scramble</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCheesy-Scramble">Change the cheese variety for a less-spicy meal.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowChimichurri">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorChimichurri" href="Breakfast/Chimichurri.html"><img id="imageChimichurri" src="../images/recipes/small/chimichurri.jpg" alt="Chimichurri"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorChimichurri" href="Breakfast/Chimichurri.html">Chimichurri</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryChimichurri">This classic Argentinian meat condiment is bright, fresh, and tart, with a touch of spicy heat; thin-bodied but loaded with chopped herbs for vibrant "green" flavor. Can be used as a sauce or marinade.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCocoa-Berry-Butter-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCocoa-Berry-Butter-Smoothie" href="Breakfast/Cocoa-Berry-Butter-Smoothie.html"><img id="imageCocoa-Berry-Butter-Smoothie" src="../images/recipes/recipeMobileBlank.png" alt="Cocoa Berry Butter Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCocoa-Berry-Butter-Smoothie" href="Breakfast/Cocoa-Berry-Butter-Smoothie.html">Cocoa Berry Butter Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCocoa-Berry-Butter-Smoothie">A nice way to get a taste of chocolate for breakfast&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCottage-Cheese-Apple">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCottage-Cheese-Apple" href="Breakfast/Cottage-Cheese-Apple.html"><img id="imageCottage-Cheese-Apple" src="../images/recipes/small/cottage-cheese-apple.png" alt="Cottage Cheese Apple"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCottage-Cheese-Apple" href="Breakfast/Cottage-Cheese-Apple.html">Cottage Cheese Apple</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCottage-Cheese-Apple">EASY A great way to add some zip to cottage cheese.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCottage-Cheese-with-Fruit">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCottage-Cheese-with-Fruit" href="Breakfast/Cottage-Cheese-with-Fruit.html"><img id="imageCottage-Cheese-with-Fruit" src="../images/recipes/small/cottage-cheese-with-fruit.png" alt="Cottage Cheese with Fruit"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCottage-Cheese-with-Fruit" href="Breakfast/Cottage-Cheese-with-Fruit.html">Cottage Cheese with Fruit</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCottage-Cheese-with-Fruit">EASY Mandarin oranges are the key to this recipe’s success.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCottage-Cheese-with-Raspberry-Sauce">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCottage-Cheese-with-Raspberry-Sauce" href="Breakfast/Cottage-Cheese-with-Raspberry-Sauce.html"><img id="imageCottage-Cheese-with-Raspberry-Sauce" src="../images/recipes/recipeMobileBlank.png" alt="Cottage Cheese with Raspberry Sauce"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCottage-Cheese-with-Raspberry-Sauce" href="Breakfast/Cottage-Cheese-with-Raspberry-Sauce.html">Cottage Cheese with Raspberry Sauce</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCottage-Cheese-with-Raspberry-Sauce">Pureed raspberries make this breakfast seem like a dessert.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCrab-Cheese-Omelet-Oatmeal-with-a-Twist">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCrab-Cheese-Omelet-Oatmeal-with-a-Twist" href="Breakfast/Crab-Cheese-Omelet-Oatmeal-with-a-Twist.html"><img id="imageCrab-Cheese-Omelet-Oatmeal-with-a-Twist" src="../images/recipes/small/crab-cheese-omelet-oatmeal-with-a-twist.png" alt="Crab & Cheese Omelet & Oatmeal with a Twist"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCrab-Cheese-Omelet-Oatmeal-with-a-Twist" href="Breakfast/Crab-Cheese-Omelet-Oatmeal-with-a-Twist.html">Crab & Cheese Omelet & Oatmeal with a Twist</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCrab-Cheese-Omelet-Oatmeal-with-a-Twist">The delicious twist is the addition of peanut butter.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCreamy-Apple-Cinnamon-Oatmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCreamy-Apple-Cinnamon-Oatmeal" href="Breakfast/Creamy-Apple-Cinnamon-Oatmeal.html"><img id="imageCreamy-Apple-Cinnamon-Oatmeal" src="../images/recipes/recipeMobileBlank.png" alt="Creamy Apple & Cinnamon Oatmeal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCreamy-Apple-Cinnamon-Oatmeal" href="Breakfast/Creamy-Apple-Cinnamon-Oatmeal.html">Creamy Apple & Cinnamon Oatmeal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCreamy-Apple-Cinnamon-Oatmeal">For a quick breakfast, make a large batch of steel-cut oatmeal the night before and heat portions in the microwave.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCreamy-Frozen-Strawberry-Banana-Yogurt">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCreamy-Frozen-Strawberry-Banana-Yogurt" href="Breakfast/Creamy-Frozen-Strawberry-Banana-Yogurt.html"><img id="imageCreamy-Frozen-Strawberry-Banana-Yogurt" src="../images/recipes/small/creamy-frozen-strawberry-banana-yogurt.png" alt="Creamy Frozen Strawberry Peach Yogurt"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCreamy-Frozen-Strawberry-Banana-Yogurt" href="Breakfast/Creamy-Frozen-Strawberry-Banana-Yogurt.html">Creamy Frozen Strawberry Peach Yogurt</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCreamy-Frozen-Strawberry-Banana-Yogurt">EASY Blending frozen fruits creates a cool breakfast on a warm day.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowCrunchy-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorCrunchy-Breakfast" href="Breakfast/Crunchy-Breakfast.html"><img id="imageCrunchy-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Crunchy Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorCrunchy-Breakfast" href="Breakfast/Crunchy-Breakfast.html">Crunchy Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryCrunchy-Breakfast">Celery gives it its crunch.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEasy-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEasy-Breakfast" href="Breakfast/Easy-Breakfast.html"><img id="imageEasy-Breakfast" src="../images/recipes/small/easy-breakfast.png" alt="Easy Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEasy-Breakfast" href="Breakfast/Easy-Breakfast.html">Easy Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEasy-Breakfast">EASY A simple one-bowl breakfast. Make oatmeal the night before.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEgg-Casserole">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEgg-Casserole" href="Breakfast/Egg-Casserole.html"><img id="imageEgg-Casserole" src="../images/recipes/recipeMobileBlank.png" alt="Egg Casserole"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEgg-Casserole" href="Breakfast/Egg-Casserole.html">Egg Casserole</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEgg-Casserole">Like a quiche without a crust&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEgg-N-Fruit">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEgg-N-Fruit" href="Breakfast/Egg-N-Fruit.html"><img id="imageEgg-N-Fruit" src="../images/recipes/recipeMobileBlank.png" alt="Egg'N Fruit"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEgg-N-Fruit" href="Breakfast/Egg-N-Fruit.html">Egg'N Fruit</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEgg-N-Fruit">Super quick for the morning&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEgg-Scramble-with-Mandarin-Orange">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEgg-Scramble-with-Mandarin-Orange" href="Breakfast/Egg-Scramble-with-Mandarin-Orange.html"><img id="imageEgg-Scramble-with-Mandarin-Orange" src="../images/recipes/recipeMobileBlank.png" alt="Egg Scramble with Mandarin Orange"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEgg-Scramble-with-Mandarin-Orange" href="Breakfast/Egg-Scramble-with-Mandarin-Orange.html">Egg Scramble with Mandarin Orange</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEgg-Scramble-with-Mandarin-Orange">To speed up the process, purchase pre-sliced mushrooms and frozen onions & peppers (or buy them from the salad bar).&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEggmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEggmeal" href="Breakfast/Eggmeal.html"><img id="imageEggmeal" src="../images/recipes/small/eggmeal.png" alt="Egg-meal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEggmeal" href="Breakfast/Eggmeal.html">Egg-meal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEggmeal">Salsa gives these eggs some zip.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEggnog-Oatmeal">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEggnog-Oatmeal" href="Breakfast/Eggnog-Oatmeal.html"><img id="imageEggnog-Oatmeal" src="../images/recipes/recipeMobileBlank.png" alt="Eggnog Oatmeal"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEggnog-Oatmeal" href="Breakfast/Eggnog-Oatmeal.html">Eggnog Oatmeal</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEggnog-Oatmeal">Nutmeg enhances this tasty breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEggnog-Yogurt-with-Fruit">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEggnog-Yogurt-with-Fruit" href="Breakfast/Eggnog-Yogurt-with-Fruit.html"><img id="imageEggnog-Yogurt-with-Fruit" src="../images/recipes/recipeMobileBlank.png" alt="Eggnog Yogurt with Fruit"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEggnog-Yogurt-with-Fruit" href="Breakfast/Eggnog-Yogurt-with-Fruit.html">Eggnog Yogurt with Fruit</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEggnog-Yogurt-with-Fruit">Drizzle fruit with lemon juice.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEggplanty-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEggplanty-Breakfast" href="Breakfast/Eggplanty-Breakfast.html"><img id="imageEggplanty-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Eggplanty Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEggplanty-Breakfast" href="Breakfast/Eggplanty-Breakfast.html">Eggplanty Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEggplanty-Breakfast">Here’s a great way to incorporate vegetables into your breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEggVegetable-Cheese-Bake">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEggVegetable-Cheese-Bake" href="Breakfast/EggVegetable-Cheese-Bake.html"><img id="imageEggVegetable-Cheese-Bake" src="../images/recipes/recipeMobileBlank.png" alt="Egg-Vegetable & Cheese Bake"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEggVegetable-Cheese-Bake" href="Breakfast/EggVegetable-Cheese-Bake.html">Egg-Vegetable & Cheese Bake</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEggVegetable-Cheese-Bake">This is great to make on the weekend and enjoy during the week.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEggVegetable-Pie-Italiano-and-Fruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEggVegetable-Pie-Italiano-and-Fruit-Salad" href="Breakfast/EggVegetable-Pie-Italiano-and-Fruit-Salad.html"><img id="imageEggVegetable-Pie-Italiano-and-Fruit-Salad" src="../images/recipes/recipeMobileBlank.png" alt="Egg Vegetable Pie Italiano with Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEggVegetable-Pie-Italiano-and-Fruit-Salad" href="Breakfast/EggVegetable-Pie-Italiano-and-Fruit-Salad.html">Egg Vegetable Pie Italiano with Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEggVegetable-Pie-Italiano-and-Fruit-Salad">This crustless pie is accompanied by a fruit salad, the perfect breakfast for four.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowEjjah-Tunisian-Egg-Dish">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorEjjah-Tunisian-Egg-Dish" href="Breakfast/Ejjah-Tunisian-Egg-Dish.html"><img id="imageEjjah-Tunisian-Egg-Dish" src="../images/recipes/recipeMobileBlank.png" alt="Ejjah (Tunisian Egg Dish)"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorEjjah-Tunisian-Egg-Dish" href="Breakfast/Ejjah-Tunisian-Egg-Dish.html">Ejjah (Tunisian Egg Dish)</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryEjjah-Tunisian-Egg-Dish">This egg dish brings the taste of Tunisia.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFaux-Frittata-with-Fruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFaux-Frittata-with-Fruit-Salad" href="Breakfast/Faux-Frittata-with-Fruit-Salad.html"><img id="imageFaux-Frittata-with-Fruit-Salad" src="../images/recipes/small/faux-frittata-with-fruit-salad.png" alt="Faux Frittata with Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFaux-Frittata-with-Fruit-Salad" href="Breakfast/Faux-Frittata-with-Fruit-Salad.html">Faux Frittata with Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFaux-Frittata-with-Fruit-Salad">Unlike traditional frittatas, this one is lower in fat and calories, and you can cook it completely on top of the stove.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFrozen-Blueberry-Yogurt">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFrozen-Blueberry-Yogurt" href="Breakfast/Frozen-Blueberry-Yogurt.html"><img id="imageFrozen-Blueberry-Yogurt" src="../images/recipes/small/frozen-blueberry-yogurt.png" alt="Frozen Blueberry Yogurt"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFrozen-Blueberry-Yogurt" href="Breakfast/Frozen-Blueberry-Yogurt.html">Frozen Blueberry Yogurt</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFrozen-Blueberry-Yogurt">So much healthier than the store-bought variety.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFruit-Compote">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFruit-Compote" href="Breakfast/Fruit-Compote.html"><img id="imageFruit-Compote" src="../images/recipes/recipeMobileBlank.png" alt="Fruit Compote"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFruit-Compote" href="Breakfast/Fruit-Compote.html">Fruit Compote</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFruit-Compote">Warmed Fruit mixture over cottage cheese tastes great.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFruit-N-Nuts">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFruit-N-Nuts" href="Breakfast/Fruit-N-Nuts.html"><img id="imageFruit-N-Nuts" src="../images/recipes/recipeMobileBlank.png" alt="Fruit N' Nuts"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFruit-N-Nuts" href="Breakfast/Fruit-N-Nuts.html">Fruit N' Nuts</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFruit-N-Nuts">Recipe includes three fruits.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFruit-Salad-with-Maple-Yogurt-Sauce">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFruit-Salad-with-Maple-Yogurt-Sauce" href="Breakfast/Fruit-Salad-with-Maple-Yogurt-Sauce.html"><img id="imageFruit-Salad-with-Maple-Yogurt-Sauce" src="../images/recipes/small/fruit-salad-with-maple-yogurt-sauce.png" alt="Fruit Salad with Maple Yogurt Sauce"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFruit-Salad-with-Maple-Yogurt-Sauce" href="Breakfast/Fruit-Salad-with-Maple-Yogurt-Sauce.html">Fruit Salad with Maple Yogurt Sauce</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFruit-Salad-with-Maple-Yogurt-Sauce">The sweetness of this recipe can be adjusted.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFruit-Salad" href="Breakfast/Fruit-Salad.html"><img id="imageFruit-Salad" src="../images/recipes/small/fruit-salad.png" alt="Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFruit-Salad" href="Breakfast/Fruit-Salad.html">Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFruit-Salad">Cilantro is this recipe’s special ingredient.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowFruity-Breakfast-Bowl">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorFruity-Breakfast-Bowl" href="Breakfast/Fruity-Breakfast-Bowl.html"><img id="imageFruity-Breakfast-Bowl" src="../images/recipes/small/fruity-breakfast-bowl.png" alt="Fruity Breakfast Bowl"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorFruity-Breakfast-Bowl" href="Breakfast/Fruity-Breakfast-Bowl.html">Fruity Breakfast Bowl</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryFruity-Breakfast-Bowl">EASY&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowGingered-Lime-Fruit-Salad-with-Cottage-Cheese">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorGingered-Lime-Fruit-Salad-with-Cottage-Cheese" href="Breakfast/Gingered-Lime-Fruit-Salad-with-Cottage-Cheese.html"><img id="imageGingered-Lime-Fruit-Salad-with-Cottage-Cheese" src="../images/recipes/recipeMobileBlank.png" alt="Gingered Lime Fruit Salad with Cottage Cheese"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorGingered-Lime-Fruit-Salad-with-Cottage-Cheese" href="Breakfast/Gingered-Lime-Fruit-Salad-with-Cottage-Cheese.html">Gingered Lime Fruit Salad with Cottage Cheese</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryGingered-Lime-Fruit-Salad-with-Cottage-Cheese">The crushed macadamia nuts make this breakfast delicious.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowGrapefruit-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorGrapefruit-Breakfast" href="Breakfast/Grapefruit-Breakfast.html"><img id="imageGrapefruit-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Grapefruit Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorGrapefruit-Breakfast" href="Breakfast/Grapefruit-Breakfast.html">Grapefruit Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryGrapefruit-Breakfast">Quick Breakfast&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowGuacky-Eggs-and-Fruit">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorGuacky-Eggs-and-Fruit" href="Breakfast/Guacky-Eggs-and-Fruit.html"><img id="imageGuacky-Eggs-and-Fruit" src="../images/recipes/recipeMobileBlank.png" alt="Guacky Eggs and Fruit"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorGuacky-Eggs-and-Fruit" href="Breakfast/Guacky-Eggs-and-Fruit.html">Guacky Eggs and Fruit</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryGuacky-Eggs-and-Fruit">This could be a 5-minute meal. Just make the fruit salad and cook the eggs the night before. &nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowHam-and-Onion-Frittata-with-Fruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorHam-and-Onion-Frittata-with-Fruit-Salad" href="Breakfast/Ham-and-Onion-Frittata-with-Fruit-Salad.html"><img id="imageHam-and-Onion-Frittata-with-Fruit-Salad" src="../images/recipes/recipeMobileBlank.png" alt="Ham and Onion Frittata with Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorHam-and-Onion-Frittata-with-Fruit-Salad" href="Breakfast/Ham-and-Onion-Frittata-with-Fruit-Salad.html">Ham and Onion Frittata with Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryHam-and-Onion-Frittata-with-Fruit-Salad">Canadian bacon replaces the ham in this traditional breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowHealthy-Kale-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorHealthy-Kale-Smoothie" href="Breakfast/Healthy-Kale-Smoothie.html"><img id="imageHealthy-Kale-Smoothie" src="../images/recipes/recipeMobileBlank.png" alt="Healthy Kale Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorHealthy-Kale-Smoothie" href="Breakfast/Healthy-Kale-Smoothie.html">Healthy Kale Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryHealthy-Kale-Smoothie">For those who like vegetable smoothies&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowHearty-Sausage-Egg-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorHearty-Sausage-Egg-Breakfast" href="Breakfast/Hearty-Sausage-Egg-Breakfast.html"><img id="imageHearty-Sausage-Egg-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Hearty Sausage Egg Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorHearty-Sausage-Egg-Breakfast" href="Breakfast/Hearty-Sausage-Egg-Breakfast.html">Hearty Sausage Egg Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryHearty-Sausage-Egg-Breakfast">"This breakfast is eaten Monday-Friday. My husband loves it after his workout at the YMCA."
+
+-- Carol&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowLowCal-Blue-Cheese-Dressing">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorLowCal-Blue-Cheese-Dressing" href="Breakfast/LowCal-Blue-Cheese-Dressing.html"><img id="imageLowCal-Blue-Cheese-Dressing" src="../images/recipes/small/lowcal-blue-cheese-dressing.jpg" alt="Low-Cal Blue Cheese Dressing     "></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorLowCal-Blue-Cheese-Dressing" href="Breakfast/LowCal-Blue-Cheese-Dressing.html">Low-Cal Blue Cheese Dressing     </a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryLowCal-Blue-Cheese-Dressing">May be made thinner&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowMexican-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorMexican-Omelet" href="Breakfast/Mexican-Omelet.html"><img id="imageMexican-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="Mexican Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorMexican-Omelet" href="Breakfast/Mexican-Omelet.html">Mexican Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryMexican-Omelet">This omelet rivals what you’ll find on a Mexican restaurant menu.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowMixed-Berry-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorMixed-Berry-Smoothie" href="Breakfast/Mixed-Berry-Smoothie.html"><img id="imageMixed-Berry-Smoothie" src="../images/recipes/small/mixed-berry-smoothie.png" alt="Mixed Berry Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorMixed-Berry-Smoothie" href="Breakfast/Mixed-Berry-Smoothie.html">Mixed Berry Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryMixed-Berry-Smoothie">EASY Tahini is the fat source chosen for this tasty breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOat-Bran-Souffle">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOat-Bran-Souffle" href="Breakfast/Oat-Bran-Souffle.html"><img id="imageOat-Bran-Souffle" src="../images/recipes/recipeMobileBlank.png" alt="Oat Bran Soufflé"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOat-Bran-Souffle" href="Breakfast/Oat-Bran-Souffle.html">Oat Bran Soufflé</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOat-Bran-Souffle">Ground steel-cut oatmeal is the base of this soufflé.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOatmeal-Breakfast-Cookie-Recipe">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOatmeal-Breakfast-Cookie-Recipe" href="Breakfast/Oatmeal-Breakfast-Cookie-Recipe.html"><img id="imageOatmeal-Breakfast-Cookie-Recipe" src="../images/recipes/recipeMobileBlank.png" alt="Oatmeal Breakfast Cookie Recipe"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOatmeal-Breakfast-Cookie-Recipe" href="Breakfast/Oatmeal-Breakfast-Cookie-Recipe.html">Oatmeal Breakfast Cookie Recipe</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOatmeal-Breakfast-Cookie-Recipe">Now you can have cookies for breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOats-and-Cottage-Cheese">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOats-and-Cottage-Cheese" href="Breakfast/Oats-and-Cottage-Cheese.html"><img id="imageOats-and-Cottage-Cheese" src="../images/recipes/recipeMobileBlank.png" alt="Oats and Cottage Cheese"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOats-and-Cottage-Cheese" href="Breakfast/Oats-and-Cottage-Cheese.html">Oats and Cottage Cheese</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOats-and-Cottage-Cheese">Make oats ahead of time, and this breakfast is a snap to make.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOat_Bran_Soufflé">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOat_Bran_Soufflé" href="../index.html"><img id="imageOat_Bran_Soufflé" src="../images/recipes/recipeMobileBlank.png" alt="Oat Bran Soufflé"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOat_Bran_Soufflé" href="../index.html">Oat Bran Soufflé</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOat_Bran_Soufflé">Ground steel-cut oatmeal is the base of this soufflé.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOilFree-Italian-Dressing">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOilFree-Italian-Dressing" href="Breakfast/OilFree-Italian-Dressing.html"><img id="imageOilFree-Italian-Dressing" src="../images/recipes/small/oilfree-italian-dressing.jpg" alt="Pear Vinaigrette"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOilFree-Italian-Dressing" href="Breakfast/OilFree-Italian-Dressing.html">Pear Vinaigrette</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOilFree-Italian-Dressing">Perfect for company&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOkra-Breakfast-Delight">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOkra-Breakfast-Delight" href="Breakfast/Okra-Breakfast-Delight.html"><img id="imageOkra-Breakfast-Delight" src="../images/recipes/small/okra-breakfast-delight.png" alt="Okra Breakfast Delight"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOkra-Breakfast-Delight" href="Breakfast/Okra-Breakfast-Delight.html">Okra Breakfast Delight</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOkra-Breakfast-Delight">"This is my substitute nopalito recipe, and I really do like it."
+
+-- Mary L.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOmelet-Roll">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOmelet-Roll" href="Breakfast/Omelet-Roll.html"><img id="imageOmelet-Roll" src="../images/recipes/recipeMobileBlank.png" alt="Omelet Roll"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOmelet-Roll" href="Breakfast/Omelet-Roll.html">Omelet Roll</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOmelet-Roll">Omelet Roll without the roll&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOmelet-with-Sprouts-and-Herbs">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOmelet-with-Sprouts-and-Herbs" href="Breakfast/Omelet-with-Sprouts-and-Herbs.html"><img id="imageOmelet-with-Sprouts-and-Herbs" src="../images/recipes/recipeMobileBlank.png" alt="Omelet with Sprouts and Herbs"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOmelet-with-Sprouts-and-Herbs" href="Breakfast/Omelet-with-Sprouts-and-Herbs.html">Omelet with Sprouts and Herbs</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOmelet-with-Sprouts-and-Herbs">A more elaborate omelet that is filled with Zoned macronutrients.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOmelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOmelet" href="Breakfast/Omelet.html"><img id="imageOmelet" src="../images/recipes/small/omelet.png" alt="Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOmelet" href="Breakfast/Omelet.html">Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOmelet">Jalapenos give a kick to this basic omelet.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowOrange-Julius">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorOrange-Julius" href="Breakfast/Orange-Julius.html"><img id="imageOrange-Julius" src="../images/recipes/small/orange-julius.png" alt="Orange Julius"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorOrange-Julius" href="Breakfast/Orange-Julius.html">Orange Julius</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryOrange-Julius">"I used to really like Orange Juliuses, so I tried this on a whim, and it was pretty tasty."&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowPats-Pancakes">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorPats-Pancakes" href="Breakfast/Pats-Pancakes.html"><img id="imagePats-Pancakes" src="../images/recipes/recipeMobileBlank.png" alt="Pat's Pancakes"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorPats-Pancakes" href="Breakfast/Pats-Pancakes.html">Pat's Pancakes</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryPats-Pancakes">"When I began following the Zone nearly 11 years ago, I created this recipe, and it is still my favorite breakfast."
+
+-- Pat H.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowPeaches-and-Cream-Sundae">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorPeaches-and-Cream-Sundae" href="Breakfast/Peaches-and-Cream-Sundae.html"><img id="imagePeaches-and-Cream-Sundae" src="../images/recipes/small/peaches-and-cream-sundae.png" alt="Peaches and 'Cream' Sundae"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorPeaches-and-Cream-Sundae" href="Breakfast/Peaches-and-Cream-Sundae.html">Peaches and 'Cream' Sundae</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryPeaches-and-Cream-Sundae">Variation: Replace cherries with 3 more peaches.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowPeaches-and-Cream-Yogurt">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorPeaches-and-Cream-Yogurt" href="Breakfast/Peaches-and-Cream-Yogurt.html"><img id="imagePeaches-and-Cream-Yogurt" src="../images/recipes/recipeMobileBlank.png" alt="Peaches and Cream Yogurt"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorPeaches-and-Cream-Yogurt" href="Breakfast/Peaches-and-Cream-Yogurt.html">Peaches and Cream Yogurt</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryPeaches-and-Cream-Yogurt">Adjust number of ice cubes to achieve desired consistency.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowPoached-Fruit-with-Cheese">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorPoached-Fruit-with-Cheese" href="Breakfast/Poached-Fruit-with-Cheese.html"><img id="imagePoached-Fruit-with-Cheese" src="../images/recipes/recipeMobileBlank.png" alt="Poached Fruit with Cheese"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorPoached-Fruit-with-Cheese" href="Breakfast/Poached-Fruit-with-Cheese.html">Poached Fruit with Cheese</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryPoached-Fruit-with-Cheese">Another great way to add assorted fruits to cottage cheese.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowPolkaDotted-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorPolkaDotted-Omelet" href="Breakfast/PolkaDotted-Omelet.html"><img id="imagePolkaDotted-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="Polka-Dotted Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorPolkaDotted-Omelet" href="Breakfast/PolkaDotted-Omelet.html">Polka-Dotted Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryPolkaDotted-Omelet">Lentils are an easy way to meet carb requirements.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowProsciutto-and-Egg">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorProsciutto-and-Egg" href="Breakfast/Prosciutto-and-Egg.html"><img id="imageProsciutto-and-Egg" src="../images/recipes/small/prosciutto-and-egg.png" alt="Prosciutto and Egg"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorProsciutto-and-Egg" href="Breakfast/Prosciutto-and-Egg.html">Prosciutto and Egg</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryProsciutto-and-Egg">Prosciutto replaces traditional breakfast bacon.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowQuick-Apple-Cobbler-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorQuick-Apple-Cobbler-Breakfast" href="Breakfast/Quick-Apple-Cobbler-Breakfast.html"><img id="imageQuick-Apple-Cobbler-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Quick Apple Cobbler Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorQuick-Apple-Cobbler-Breakfast" href="Breakfast/Quick-Apple-Cobbler-Breakfast.html">Quick Apple Cobbler Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryQuick-Apple-Cobbler-Breakfast">EASY The addition of apples and cinnamon gives a new taste to oatmeal.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowQuick-Applesauce-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorQuick-Applesauce-Breakfast" href="Breakfast/Quick-Applesauce-Breakfast.html"><img id="imageQuick-Applesauce-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Quick Applesauce Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorQuick-Applesauce-Breakfast" href="Breakfast/Quick-Applesauce-Breakfast.html">Quick Applesauce Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryQuick-Applesauce-Breakfast">Super easy way to start the day.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowQuick-Breakfast-of-Hummus-Filled-Eggs">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorQuick-Breakfast-of-Hummus-Filled-Eggs" href="Breakfast/Quick-Breakfast-of-Hummus-Filled-Eggs.html"><img id="imageQuick-Breakfast-of-Hummus-Filled-Eggs" src="../images/recipes/recipeMobileBlank.png" alt="Quick Breakfast of Hummus Filled Eggs"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorQuick-Breakfast-of-Hummus-Filled-Eggs" href="Breakfast/Quick-Breakfast-of-Hummus-Filled-Eggs.html">Quick Breakfast of Hummus Filled Eggs</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryQuick-Breakfast-of-Hummus-Filled-Eggs">This also makes a great snack. Use two hard-boiled egg whites and 1/4 cup hummus.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowQuick-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorQuick-Breakfast" href="Breakfast/Quick-Breakfast.html"><img id="imageQuick-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Quick Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorQuick-Breakfast" href="Breakfast/Quick-Breakfast.html">Quick Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryQuick-Breakfast">Apple and peanut butter are a good team.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowQuick-Oatmeal-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorQuick-Oatmeal-Breakfast" href="Breakfast/Quick-Oatmeal-Breakfast.html"><img id="imageQuick-Oatmeal-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Quick Oatmeal Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorQuick-Oatmeal-Breakfast" href="Breakfast/Quick-Oatmeal-Breakfast.html">Quick Oatmeal Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryQuick-Oatmeal-Breakfast">EASY Precook oatmeal. Peanut butter brings unexpected flavors.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowRaspberry-Cream">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorRaspberry-Cream" href="Breakfast/Raspberry-Cream.html"><img id="imageRaspberry-Cream" src="../images/recipes/recipeMobileBlank.png" alt="Raspberry Cream"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorRaspberry-Cream" href="Breakfast/Raspberry-Cream.html">Raspberry Cream</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryRaspberry-Cream">EASY You could also use it as a dessert if separated into 3 portions.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowRaspberry-Lime-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorRaspberry-Lime-Smoothie" href="Breakfast/Raspberry-Lime-Smoothie.html"><img id="imageRaspberry-Lime-Smoothie" src="../images/recipes/small/raspberry-lime-smoothie.jpg" alt="Raspberry Lime Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorRaspberry-Lime-Smoothie" href="Breakfast/Raspberry-Lime-Smoothie.html">Raspberry Lime Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryRaspberry-Lime-Smoothie">Better than a lime rickey.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSalsa-Scramble">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSalsa-Scramble" href="Breakfast/Salsa-Scramble.html"><img id="imageSalsa-Scramble" src="../images/recipes/recipeMobileBlank.png" alt="Salsa Scramble"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSalsa-Scramble" href="Breakfast/Salsa-Scramble.html">Salsa Scramble</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySalsa-Scramble">A Mexican Delight, which includes guacamole.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSausage-Frittata">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSausage-Frittata" href="Breakfast/Sausage-Frittata.html"><img id="imageSausage-Frittata" src="../images/recipes/recipeMobileBlank.png" alt="Sausage Frittata"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSausage-Frittata" href="Breakfast/Sausage-Frittata.html">Sausage Frittata</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySausage-Frittata">The use of chicken sausage makes this recipe Zone favorable.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSicilian-Cauliflower-and-Egg-Frittata-with-Sausage">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSicilian-Cauliflower-and-Egg-Frittata-with-Sausage" href="Breakfast/Sicilian-Cauliflower-and-Egg-Frittata-with-Sausage.html"><img id="imageSicilian-Cauliflower-and-Egg-Frittata-with-Sausage" src="../images/recipes/recipeMobileBlank.png" alt="Sicilian Cauliflower and Egg Frittata with Sausage"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSicilian-Cauliflower-and-Egg-Frittata-with-Sausage" href="Breakfast/Sicilian-Cauliflower-and-Egg-Frittata-with-Sausage.html">Sicilian Cauliflower and Egg Frittata with Sausage</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySicilian-Cauliflower-and-Egg-Frittata-with-Sausage">Now that’s a substantial breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSlow-Poached-Pears-with-Vanilla-Yogurt-Sauce">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSlow-Poached-Pears-with-Vanilla-Yogurt-Sauce" href="Breakfast/Slow-Poached-Pears-with-Vanilla-Yogurt-Sauce.html"><img id="imageSlow-Poached-Pears-with-Vanilla-Yogurt-Sauce" src="../images/recipes/recipeMobileBlank.png" alt="Slow Poached Pears with Vanilla Yogurt Sauce"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSlow-Poached-Pears-with-Vanilla-Yogurt-Sauce" href="Breakfast/Slow-Poached-Pears-with-Vanilla-Yogurt-Sauce.html">Slow Poached Pears with Vanilla Yogurt Sauce</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySlow-Poached-Pears-with-Vanilla-Yogurt-Sauce">To simplify breakfast, cook the pears the day or evening before you need them.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSmokey-Salmon-Egg-Scramble">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSmokey-Salmon-Egg-Scramble" href="Breakfast/Smokey-Salmon-Egg-Scramble.html"><img id="imageSmokey-Salmon-Egg-Scramble" src="../images/recipes/small/smokey-salmon-egg-scramble.jpg" alt="Smokey Salmon Egg Scramble"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSmokey-Salmon-Egg-Scramble" href="Breakfast/Smokey-Salmon-Egg-Scramble.html">Smokey Salmon Egg Scramble</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySmokey-Salmon-Egg-Scramble">Natural liquid hickory smoke seasoning makes salmon taste smoky without sodium nitrate, sugar, or excess sodium.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSouth-of-the-Border-Eggs">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSouth-of-the-Border-Eggs" href="Breakfast/South-of-the-Border-Eggs.html"><img id="imageSouth-of-the-Border-Eggs" src="../images/recipes/recipeMobileBlank.png" alt="South of the Border Eggs"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSouth-of-the-Border-Eggs" href="Breakfast/South-of-the-Border-Eggs.html">South of the Border Eggs</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySouth-of-the-Border-Eggs">All the tastes of Mexico.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSouth-of-the-Border-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSouth-of-the-Border-Omelet" href="Breakfast/South-of-the-Border-Omelet.html"><img id="imageSouth-of-the-Border-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="South of the Border Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSouth-of-the-Border-Omelet" href="Breakfast/South-of-the-Border-Omelet.html">South of the Border Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySouth-of-the-Border-Omelet">Black beans and salsa enhance this recipe.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSpa-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSpa-Smoothie" href="Breakfast/Spa-Smoothie.html"><img id="imageSpa-Smoothie" src="../images/recipes/small/spa-smoothie.jpg" alt="Spa Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSpa-Smoothie" href="Breakfast/Spa-Smoothie.html">Spa Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySpa-Smoothie">Quite filling&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSpanish-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSpanish-Omelet" href="Breakfast/Spanish-Omelet.html"><img id="imageSpanish-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="Spanish Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSpanish-Omelet" href="Breakfast/Spanish-Omelet.html">Spanish Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySpanish-Omelet">Make sure not to overcook.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSpicy-Shrimp-and-Mushroom-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSpicy-Shrimp-and-Mushroom-Omelet" href="Breakfast/Spicy-Shrimp-and-Mushroom-Omelet.html"><img id="imageSpicy-Shrimp-and-Mushroom-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="Spicy Shrimp and Mushroom Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSpicy-Shrimp-and-Mushroom-Omelet" href="Breakfast/Spicy-Shrimp-and-Mushroom-Omelet.html">Spicy Shrimp and Mushroom Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySpicy-Shrimp-and-Mushroom-Omelet">A great way to have shrimp for breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSpinach-and-Mushroom-Quiche">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSpinach-and-Mushroom-Quiche" href="Breakfast/Spinach-and-Mushroom-Quiche.html"><img id="imageSpinach-and-Mushroom-Quiche" src="../images/recipes/recipeMobileBlank.png" alt="Spinach and Mushroom ‘Quiche’"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSpinach-and-Mushroom-Quiche" href="Breakfast/Spinach-and-Mushroom-Quiche.html">Spinach and Mushroom ‘Quiche’</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySpinach-and-Mushroom-Quiche">Have an apple on the side.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSpinach-and-Tofu-Quicherole">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSpinach-and-Tofu-Quicherole" href="Breakfast/Spinach-and-Tofu-Quicherole.html"><img id="imageSpinach-and-Tofu-Quicherole" src="../images/recipes/recipeMobileBlank.png" alt="Spinach and Tofu Quicherole"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSpinach-and-Tofu-Quicherole" href="Breakfast/Spinach-and-Tofu-Quicherole.html">Spinach and Tofu Quicherole</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySpinach-and-Tofu-Quicherole">Serve hot or cold with salsa on the side.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSpinachEgg-Pie-with-Fruit-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSpinachEgg-Pie-with-Fruit-Salad" href="Breakfast/SpinachEgg-Pie-with-Fruit-Salad.html"><img id="imageSpinachEgg-Pie-with-Fruit-Salad" src="../images/recipes/recipeMobileBlank.png" alt="Spinach-Egg Pie with Fruit Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSpinachEgg-Pie-with-Fruit-Salad" href="Breakfast/SpinachEgg-Pie-with-Fruit-Salad.html">Spinach-Egg Pie with Fruit Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySpinachEgg-Pie-with-Fruit-Salad">Here’s a great zone-friendly alternative to quiche. &nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowStrawberry-Blueberry-Banana-Pancakes">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorStrawberry-Blueberry-Banana-Pancakes" href="Breakfast/Strawberry-Blueberry-Banana-Pancakes.html"><img id="imageStrawberry-Blueberry-Banana-Pancakes" src="../images/recipes/recipeMobileBlank.png" alt="Strawberry/Blueberry/Banana Pancakes"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorStrawberry-Blueberry-Banana-Pancakes" href="Breakfast/Strawberry-Blueberry-Banana-Pancakes.html">Strawberry/Blueberry/Banana Pancakes</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryStrawberry-Blueberry-Banana-Pancakes">Freeze any extras. Reheat in the toaster for a quick breakfast or snack.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowStrawberry-Feta-Salad">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorStrawberry-Feta-Salad" href="Breakfast/Strawberry-Feta-Salad.html"><img id="imageStrawberry-Feta-Salad" src="../images/recipes/recipeMobileBlank.png" alt="Strawberry Feta Salad"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorStrawberry-Feta-Salad" href="Breakfast/Strawberry-Feta-Salad.html">Strawberry Feta Salad</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryStrawberry-Feta-Salad">Here’s something different for breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowStrawberry-Orange-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorStrawberry-Orange-Smoothie" href="Breakfast/Strawberry-Orange-Smoothie.html"><img id="imageStrawberry-Orange-Smoothie" src="../images/recipes/recipeMobileBlank.png" alt="Strawberry Orange Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorStrawberry-Orange-Smoothie" href="Breakfast/Strawberry-Orange-Smoothie.html">Strawberry Orange Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryStrawberry-Orange-Smoothie">EASY A great way to start the day for people tired of eggs for breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSunshine-Breakfast">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSunshine-Breakfast" href="Breakfast/Sunshine-Breakfast.html"><img id="imageSunshine-Breakfast" src="../images/recipes/recipeMobileBlank.png" alt="Sunshine Breakfast"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSunshine-Breakfast" href="Breakfast/Sunshine-Breakfast.html">Sunshine Breakfast</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySunshine-Breakfast">A unique combination of ingredients&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowSweet-Ending-Scrambled-Eggs">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorSweet-Ending-Scrambled-Eggs" href="Breakfast/Sweet-Ending-Scrambled-Eggs.html"><img id="imageSweet-Ending-Scrambled-Eggs" src="../images/recipes/recipeMobileBlank.png" alt="Sweet Ending Scrambled Eggs"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorSweet-Ending-Scrambled-Eggs" href="Breakfast/Sweet-Ending-Scrambled-Eggs.html">Sweet Ending Scrambled Eggs</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummarySweet-Ending-Scrambled-Eggs">Fruit sundae is the happy ending.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowTahini-Zone-Cakes">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorTahini-Zone-Cakes" href="Breakfast/Tahini-Zone-Cakes.html"><img id="imageTahini-Zone-Cakes" src="../images/recipes/recipeMobileBlank.png" alt="Tahini Zone Cakes"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorTahini-Zone-Cakes" href="Breakfast/Tahini-Zone-Cakes.html">Tahini Zone Cakes</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryTahini-Zone-Cakes">Better than pancakes&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowThick-Blueberry-Pancakes">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorThick-Blueberry-Pancakes" href="Breakfast/Thick-Blueberry-Pancakes.html"><img id="imageThick-Blueberry-Pancakes" src="../images/recipes/recipeMobileBlank.png" alt="Thick Blueberry Pancakes"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorThick-Blueberry-Pancakes" href="Breakfast/Thick-Blueberry-Pancakes.html">Thick Blueberry Pancakes</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryThick-Blueberry-Pancakes">Mash the blueberries for “syrup.”&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowTomato-and-Squash-Side-Dish">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorTomato-and-Squash-Side-Dish" href="Breakfast/Tomato-and-Squash-Side-Dish.html"><img id="imageTomato-and-Squash-Side-Dish" src="../images/recipes/small/tomato-and-squash-side-dish.jpg" alt="Tomato and Squash Side Dish       "></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorTomato-and-Squash-Side-Dish" href="Breakfast/Tomato-and-Squash-Side-Dish.html">Tomato and Squash Side Dish       </a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryTomato-and-Squash-Side-Dish">&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowTomato-Topped-Eggs-and-BerryPeach-Smoothie">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorTomato-Topped-Eggs-and-BerryPeach-Smoothie" href="Breakfast/Tomato-Topped-Eggs-and-BerryPeach-Smoothie.html"><img id="imageTomato-Topped-Eggs-and-BerryPeach-Smoothie" src="../images/recipes/recipeMobileBlank.png" alt="Tomato Topped Eggs and Berry Peach Smoothie"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorTomato-Topped-Eggs-and-BerryPeach-Smoothie" href="Breakfast/Tomato-Topped-Eggs-and-BerryPeach-Smoothie.html">Tomato Topped Eggs and Berry Peach Smoothie</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryTomato-Topped-Eggs-and-BerryPeach-Smoothie">Add variety to your breakfast.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowVegetable-Omelete-and-Strawberries">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorVegetable-Omelete-and-Strawberries" href="Breakfast/Vegetable-Omelete-and-Strawberries.html"><img id="imageVegetable-Omelete-and-Strawberries" src="../images/recipes/recipeMobileBlank.png" alt="Vegetable Omelete and Strawberries"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorVegetable-Omelete-and-Strawberries" href="Breakfast/Vegetable-Omelete-and-Strawberries.html">Vegetable Omelete and Strawberries</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryVegetable-Omelete-and-Strawberries">Contains black beans&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowVegetable-Tofu-Scramble">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorVegetable-Tofu-Scramble" href="Breakfast/Vegetable-Tofu-Scramble.html"><img id="imageVegetable-Tofu-Scramble" src="../images/recipes/recipeMobileBlank.png" alt="Vegetable Tofu Scramble"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorVegetable-Tofu-Scramble" href="Breakfast/Vegetable-Tofu-Scramble.html">Vegetable Tofu Scramble</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryVegetable-Tofu-Scramble">This is a great breakfast for vegans.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowVeggie-Omelet">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorVeggie-Omelet" href="Breakfast/Veggie-Omelet.html"><img id="imageVeggie-Omelet" src="../images/recipes/recipeMobileBlank.png" alt="Veggie Omelet"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorVeggie-Omelet" href="Breakfast/Veggie-Omelet.html">Veggie Omelet</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryVeggie-Omelet">Carbs add up quickly here.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowYogurt-Oats">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorYogurt-Oats" href="Breakfast/Yogurt-Oats.html"><img id="imageYogurt-Oats" src="../images/recipes/recipeMobileBlank.png" alt="Yogurt & Oats"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorYogurt-Oats" href="Breakfast/Yogurt-Oats.html">Yogurt & Oats</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryYogurt-Oats">Quick breakfast in a bowl. Make oatmeal the night before.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div><div id="recipeRowZone-Muesli">
+<div class="row-fluid">
+<div class="span2">
+<a id="pictureAnchorZone-Muesli" href="Breakfast/Zone-Muesli.html"><img id="imageZone-Muesli" src="../images/recipes/small/zone-muesli.jpg" alt="Zone Muesli"></a>
+</div>
+<div class="span10">
+<div class="row-fluid">
+<div class="span12">
+<h4><a id="textAnchorZone-Muesli" href="Breakfast/Zone-Muesli.html">Zone Muesli</a></h4>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span12">
+<p id="pRecipeSummaryZone-Muesli">This recipe can be partially prepared the night before.&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid"><div class="span12 blueLineDivider"></div></div>
+</div></div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+
+
+<div class="container">
+
+    <style type="text/css">
+
+    /* FOOTER
+    -------------------------------------------------- */
+    .footer-text{
+        font-size: 12px;
+        }
+
+    .footer-image {
+	    margin-left:auto;
+	    margin-right:auto;
+	     width:85%;
+    }
+
+    .footer-text ul{
+        list-style-type: none;
+    }
+    .footer{
+        background-color:#E4E4E4;
+        padding: 15px 30px 10px 10px;
+      }
+
+
+    </style>
+
+    
+
+
+
+    <div class="container">
+        <hr>
+
+        <footer class="footer">
+            <div class="row-fluid footer-text">
+                <div class="span1">&nbsp;</div>
+                <div class="span2">
+                    <ul>
+                        <li><strong>MEDIA</strong></li>
+
+                        <li><a href="../press-room.html">Press Room</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="../customer-service.html">NEED HELP?</a></strong></li>
+
+                        <li><a href="../customer-service.html">Customer Service</a></li>
+
+                        <li><a href="../shipping-information.html">Shipping Information</a></li>
+
+                        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+
+                        <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+                        
+                        <li><a href="../return-policy.html">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong><a href="../shipping-intl.html">INTERNATIONAL CUSTOMERS</a></strong></li>
+
+                        <li><strong>978-539-0100</strong></li>
+
+                        <li><a href="mailto:internationalorders@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="span2">
+                    <ul>
+                        <li><strong>CONTACT US</strong></li>
+
+                        <li><strong>800-404-8171</strong></li>
+
+                        <li><a href="mailto:customerservice@zoneliving.com">Send Email</a></li>
+                    </ul>
+                </div>
+                
+                <div class="span2">
+					<a href="http://www.youtube.com/zoneadmin/"><img src="../images/youtube.png"></a><img src="../bootstrapfiles/spacer.gif" style="width:5px;height:1px;">
+                    <a href="http://www.facebook.com/TheZoneDiet"><img src="../images/facebook.png"></a><img src="../bootstrapfiles/spacer.gif" style="width:5px;height:5px;">
+                    <a href="https://twitter.com/thezonediet/"><img src="../images/twitter.png"></a>
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+        </footer><br>
+
+<!--
+        <div class="container">
+            <div class="footer-image"><img src="/bootstrapfiles/footer_images/zone_logos.png"> <img src="/bootstrapfiles/footer_images/diagnoztics_logos.png"> <img src="/bootstrapfiles/footer_images/zonehealth_logo.png"> <img src="/bootstrapfiles/spacer.gif"> <img src="/bootstrapfiles/footer_images/youtube.png"> <img src="/bootstrapfiles/footer_images/twitter.png"> <img src="/bootstrapfiles/footer_images/facebook.png"></div>
+        </div>
+-->
+
+<!--
+        <div class="row-fluid">
+            <div class="span12"><img src="/bootstrapfiles/spacer.gif" style="width:242px; height: 25px;"></div>
+        </div>
+-->
+
+       <p class="pull-right"><a href="Breakfast.html#">Back to top</a></p>
+
+       <script type="text/javascript">
+           var currentTime = new Date()
+           //var month = currentTime.getMonth() + 1
+           //var day = currentTime.getDate()
+           var year = currentTime.getFullYear()
+           document.write("&copy" + year + " Zone Labs Inc., All Rights Reserved")
+        </script>
+
+    </div>
+
+            <!-- Le javascript
+    ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="../bootstrapfiles/jquery.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-transition.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-alert.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-modal.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-dropdown.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-scrollspy.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-tab.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-tooltip.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-popover.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-button.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-collapse.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-carousel.js" type="text/javascript">
+</script> <script src="../bootstrapfiles/bootstrap-typeahead.js" type="text/javascript">
+</script>
+ <script src="../bootstrapfiles/prettify.js"></script>
+<script src="../bootstrapfiles/bootstrap-datepicker.js" type="text/javascript">
+</script>
+<script src="../js/jquery.cookie.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack-v=2.1.5.js"></script>
+<link rel="stylesheet" href="../js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.css" type="text/css" media="screen">
+<script type="text/javascript" src="../js/fancybox/source/helpers/jquery.fancybox-buttons-v=1.0.5.js"></script>
+<script type="text/javascript" src="../js/fancybox/source/helpers/jquery.fancybox-media-v=1.0.6.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+		$('.datepicker').datepicker();
+		if($.cookie('mackerelu'))
+		{
+			$.cookie('slogin', '1', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+		}
+		else if($.cookie('slogin'))
+		{
+			if($.cookie('slogin') == '1')
+			{
+				$.cookie('slogin', '0', { domain: '.zonediet.com' ,expires: 30, path: '/' });
+			}
+		}
+	});
+</script>
+<!-- BEGIN: Google Trusted Stores -->
+<script type="text/javascript">
+    var gts = gts || [];
+
+    gts.push(["id", "404041"]);
+    gts.push(["locale", "en_US"]);
+    //gts.push(["google_base_offer_id", "ITEM_GOOGLE_SHOPPING_ID"]);
+    //gts.push(["google_base_subaccount_id", "ITEM_GOOGLE_SHOPPING_ACCOUNT_ID"]);
+    //gts.push(["google_base_country", "ITEM_GOOGLE_SHOPPING_COUNTRY"]);
+    //gts.push(["google_base_language", "ITEM_GOOGLE_SHOPPING_LANGUAGE"]);
+
+    (function () {
+        var scheme = (("https:" == document.location.protocol) ? "https://" : "http://");
+        var gts = document.createElement("script");
+        gts.type = "text/javascript";
+        gts.async = true;
+        gts.src = scheme + "www.googlecommerce.com/trustedstores/gtmp_compiled.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(gts, s);
+    })();
+</script>
+<!-- END: Google Trusted Stores -->
+</div></div></div><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1361871-3']);
+  _gaq.push(['_setDomainName', 'zonediet.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"Kp9Uh1aon800iJ", domain:"zonediet.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Kp9Uh1aon800iJ" style="display:none" height="1" width="1" alt=""></noscript>
+<!-- End Alexa Certify Javascript -->
+</body>
+
+</html>
